@@ -20,15 +20,18 @@ public class TestKeyAcc {
     private static Logger logger = LoggerFactory.getLogger(TestKeyAcc.class);
 
     public static void main(String[] arg) {
-        String keyFile = "D:\\lzgit\\demo\\src\\main\\resources\\chenxiao.pem";
+        String keyFile = "C:\\Users\\Administrator\\Desktop\\mygit\\mylearnproject\\demo\\src\\main\\resources\\chenxiao.pem";
         String user = "chenxiao";
         String host = "210.14.152.199";
         int port = 12330;
         String passphrase = "RXIN7K2uWFeoCjZy";
+
+        Session session = null;
+        Channel channel = null;
         try {
             JSch jsch = new JSch();
             jsch.addIdentity(keyFile);
-            Session session = jsch.getSession(user, host, port);
+            session = jsch.getSession(user, host, port);
             // username and passphrase will be given via UserInfo interface.
             UserInfo ui = new MyUserInfo(passphrase);
             session.setUserInfo(ui);
@@ -37,12 +40,11 @@ public class TestKeyAcc {
             config.put("StrictHostKeyChecking", "no");
             session.setConfig(config);
             session.connect();
-            session.connect();
 
-            Channel channel = session.openChannel("shell");
+            channel = session.openChannel("shell");
             PipedInputStream pipeIn = new PipedInputStream();
             PipedOutputStream pipeOut = new PipedOutputStream(pipeIn);
-           // FileOutputStream fileOut = new FileOutputStream(outputFileName, true);
+            // FileOutputStream fileOut = new FileOutputStream(outputFileName, true);
             channel.setInputStream(pipeIn);
             channel.setOutputStream(System.out);
             channel.connect();
@@ -57,11 +59,16 @@ public class TestKeyAcc {
             pipeOut.close();
             pipeIn.close();
             System.out.close();
-            channel.disconnect();
-            session.disconnect();
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println(e);
+        }finally {
+            if (channel !=null){
+                channel.disconnect();
+            }
+            if (session !=null){
+                session.disconnect();
+            }
         }
     }
 

@@ -8,6 +8,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.nio.charset.IllegalCharsetNameException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -20,21 +22,11 @@ import java.util.regex.Pattern;
 public class TestJava {
     private static Logger logger = LoggerFactory.getLogger(TestJava.class);
 
-    public static void main(String[] args) {
-        String localIp = System.getProperty("local.ip");
-        System.out.println(localIp);
-
-        float i = (float) 1000010 / 10000;
-        System.out.println(i);
-        int j = 100;
-        float jj = j;
-        System.out.println(jj);
-
-        float wf = 100.1f;
-        int w = 100;
-        System.out.println(w);
-        System.out.println((int) wf);
-        System.out.println(w >= wf);
+    public static void main(String[] args) throws Exception{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String str;
+        str = br.readLine();
+        System.out.println(str);
     }
 
     @Test
@@ -93,4 +85,11 @@ public class TestJava {
 
     }
 
+    @Test
+    public void TestSystemIn()throws Exception{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String str;
+        str = br.readLine();
+        System.out.println(str);
+    }
 }

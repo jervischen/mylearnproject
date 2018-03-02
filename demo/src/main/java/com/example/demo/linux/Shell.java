@@ -20,7 +20,7 @@ public class Shell {
 
     private static final String USER = "root";
     private static final String PASSWORD = "123456";
-    private static final String HOST = "172.17.10.58";
+    private static final String HOST = "172.17.33.18";
     private static final int DEFAULT_SSH_PORT = 22;
 
     public static void main(String[] arg) {
