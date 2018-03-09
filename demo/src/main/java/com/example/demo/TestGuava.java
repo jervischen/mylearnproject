@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.ConcurrentMap;
 
 
 /**
@@ -33,7 +34,7 @@ public class TestGuava {
 
     @Before
     public void junitInit() {
-        cahceBuilder = CacheBuilder.newBuilder().maximumSize(2)
+        cahceBuilder = CacheBuilder.newBuilder().maximumSize(3)
                 .build(new CacheLoader<String, Optional<String>>() {
                     @Override
                     public Optional<String> load(String key) throws Exception {
@@ -48,6 +49,10 @@ public class TestGuava {
         cacheMap.put("b", "b");
         cacheMap.put("c", "c");
 
+        if(key.equals("d")){
+            cacheMap.put("d", "d");
+        }
+
         String value = cacheMap.get(key);
         if (value != null) {
             return Optional.of(value);
@@ -57,8 +62,17 @@ public class TestGuava {
 
     @Test
     public void testNull() throws Exception {
-        System.out.println(cahceBuilder.get("a").get());
-        cahceBuilder.invalidate("ff");
+
+        System.out.println(cahceBuilder.get("a"));
+        System.out.println(cahceBuilder.get("b"));
+        System.out.println(cahceBuilder.get("c"));
+        System.out.println(cahceBuilder.get("d"));
+
+        System.out.println("=================");
+        Set<String> set = cahceBuilder.asMap().keySet();
+        for (String s : set){
+            System.out.println(cahceBuilder.asMap().get(s));
+        }
     }
 
 }

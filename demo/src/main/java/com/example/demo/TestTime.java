@@ -8,6 +8,8 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -35,21 +37,39 @@ public class TestTime {
         int d2time = getTime(60, d2.toDate());
 
         String yyyyMMddStr = YYYYMMDD.print(d1.toDate().getTime());
-        System.out.println(yyyyMMddStr +d1time);
+        System.out.println(yyyyMMddStr + d1time);
     }
 
     /**
      * 两个日期间隔多少天
      */
     @Test
-    public void testDaysBetween(){
+    public void testDaysBetween() {
         DateTime oldTime = new DateTime(2017, 11, 30, 0, 0, 0);
         DateTime nowTime = new DateTime();
         int days = Days.daysBetween(oldTime, nowTime).getDays();
 
-        for (int i=0;i <=days;i++){
+        for (int i = 0; i <= days; i++) {
             DateTime startDate = oldTime.plusDays(i);
             System.out.println(startDate);
         }
+    }
+
+    @Test
+    public void testDate() throws ParseException {
+        SimpleDateFormat simFormat = new SimpleDateFormat("yyyy-MM-dd 23:59:59");
+        Date date = simFormat.parse("2018-03-23 22:45:56");
+        System.out.println(date.getTime() - System.currentTimeMillis());
+
+        simFormat = new SimpleDateFormat("yyyy_MM_dd");
+        System.out.println(simFormat);
+    }
+
+    @Test
+    public void testfutureDay() throws ParseException {
+        SimpleDateFormat simFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date date = simFormat.parse("2018-03-23 00:00:00");
+        System.out.println(date);
+        System.out.println(new Date(date.getTime()));
     }
 }

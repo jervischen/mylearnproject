@@ -11,6 +11,9 @@ import org.slf4j.LoggerFactory;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.nio.charset.IllegalCharsetNameException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -22,7 +25,7 @@ import java.util.regex.Pattern;
 public class TestJava {
     private static Logger logger = LoggerFactory.getLogger(TestJava.class);
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str;
         str = br.readLine();
@@ -74,22 +77,36 @@ public class TestJava {
 
 
     @Test
-    public void testStirng(){
-        String msg =String.format("抱歉，您的红包口令「%s」因不符合荔枝APP《信息存储空间服务协议》已被删除，如红包内仍有未领取的金币将在24小时内退回。"
-                ,"555");
+    public void testStirng() {
+        String msg = String.format("抱歉，您的红包口令「%s」因不符合荔枝APP《信息存储空间服务协议》已被删除，如红包内仍有未领取的金币将在24小时内退回。"
+                , "555");
         System.out.println(msg);
     }
 
     @Test
-    public void testAssert(){
+    public void testAssert() {
 
     }
 
     @Test
-    public void TestSystemIn()throws Exception{
+    public void TestSystemIn() throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str;
         str = br.readLine();
         System.out.println(str);
+    }
+
+    @Test
+    public void testBivision() {
+        System.out.println(0 / 3);
+        System.out.println(0 % 3);
+    }
+
+    @Test
+    public void testInteger() {
+        Integer i = new Integer(129);
+        int j = 129;
+        System.out.println(i == j);
+        System.out.println(i.equals(j));
     }
 }

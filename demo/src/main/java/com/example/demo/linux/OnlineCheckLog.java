@@ -17,16 +17,29 @@ import java.util.Properties;
 
 /**
  * Created in 2018-02-26 17:06.
+ * 查询线上日志
  *
  * @author chenxiao
  */
 public class OnlineCheckLog {
     private static Logger logger = LoggerFactory.getLogger(OnlineCheckLog.class);
 
+    /**
+     * 用户名
+     */
     private static final String USER = "chenxiao";
+    /**
+     * 密码
+     */
     private static final String PASSWORD = "RXIN7K2uWFeoCjZy";
+    /**
+     * 跳板机地址
+     */
     private static final String SERVER = "210.14.152.199";
     private static final int PORT = 12330;
+    /**
+     * 秘钥
+     */
     private static final String keyFile = "C:\\Users\\Administrator\\Desktop\\mygit\\mylearnproject\\demo\\src\\main\\resources\\chenxiao.pem";
 
     public static void main(String[] args) throws Exception {
@@ -39,7 +52,20 @@ public class OnlineCheckLog {
             String name = (String) serverProp.getKey();
             String server = (String) serverProp.getValue();
 
-            new OnlineCheckLog().new LinuxShell(name, server).start();
+
+            if (name.split("&&").length < 2) {
+                System.err.println("请将项目名称和机器名用&&隔开");
+                break;
+            }
+
+            //执行的命令
+            String dir = name.split("&&")[0];
+            String logFile = "server.log";
+            String command = "tail -f";
+            command = String.format("%s /data/logs/lizhi/%s/%s_idx0/%s", command, dir, dir, logFile);
+
+            System.out.println(command);
+            //  new OnlineCheckLog().new LinuxShell(name, server, command).start();
         }
     }
 
@@ -84,10 +110,12 @@ public class OnlineCheckLog {
     class LinuxShell extends Thread {
         String name;
         String server;
+        String command;
 
-        public LinuxShell(String name, String server) {
+        public LinuxShell(String name, String server, String command) {
             this.name = name;
             this.server = server;
+            this.command = command;
         }
 
         @Override
@@ -118,8 +146,7 @@ public class OnlineCheckLog {
 
                 //发送linux命令
                 pipeOut.write((server + "\n").getBytes());
-
-                pipeOut.write("tail -f /data/logs/lizhi/lz_live_fanslevel_pre/lz_live_fanslevel_pre_idx0/server.log\n".getBytes());
+                pipeOut.write((command + "\n").getBytes());
 
                 //读取命令输出信息
                 String msg;

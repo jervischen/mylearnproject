@@ -23,7 +23,7 @@ public class DockerCheckAlive {
     public static void main(String[] args) throws Exception {
         //从配置文件中加载服务器信息
         Properties serversProp = new Properties();
-        InputStream resourceAsStream = DockerCheckAlive.class.getResourceAsStream("/testserver.properties");
+        InputStream resourceAsStream = DockerCheckAlive.class.getResourceAsStream("/dockerserver.properties");
         serversProp.load(resourceAsStream);
 
         for (Map.Entry<Object, Object> serverProp : serversProp.entrySet()) {
