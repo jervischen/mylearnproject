@@ -58,6 +58,12 @@ public class TestJava {
     public void testDouble() {
         float v = (float) 20 / 600;
         System.out.println(v);
+
+        Double d = 2d;
+        double d1 = 2;
+
+        System.out.println(d);
+        System.out.println(d1);
     }
 
     @Test
