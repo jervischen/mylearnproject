@@ -23,32 +23,24 @@ import java.util.Properties;
  *
  * @author chenxiao
  */
-public class OnlineCheckLog {
-    private static Logger logger = LoggerFactory.getLogger(OnlineCheckLog.class);
+public class DockerCheckLog {
+    private static Logger logger = LoggerFactory.getLogger(DockerCheckLog.class);
 
     /**
      * 用户名
      */
-    private static final String USER = "chenxiao";
+    private static final String USER = "root";
     /**
      * 密码
      */
-    private static final String PASSWORD = "RXIN7K2uWFeoCjZy";
-    /**
-     * 跳板机地址
-     */
-    private static final String SERVER = "210.14.152.199";
-    private static final int PORT = 12330;
-    /**
-     * 秘钥
-     */
-    private static final String keyFile = "C:\\Users\\Administrator\\Desktop\\mygit\\mylearnproject\\demo\\src\\main\\resources\\chenxiao.pem";
+    private static final String PASSWORD = "123456";
 
+    private static final int PORT = 22;
 
     public static void main(String[] args) throws Exception {
         //从配置文件中加载服务器信息
         Properties serversProp = new Properties();
-        InputStream resourceAsStream = OnlineCheckLog.class.getResourceAsStream("/onlineserver.properties");
+        InputStream resourceAsStream = DockerCheckLog.class.getResourceAsStream("/dockerlog.properties");
         serversProp.load(resourceAsStream);
 
         for (Map.Entry<Object, Object> serverProp : serversProp.entrySet()) {
@@ -61,22 +53,21 @@ public class OnlineCheckLog {
                 break;
             }
 
-            //执行的命令
-            String dir = name.split("&&")[0];
-
-
-            String command = "tail -f";
+            //获取目录
+            String dir = name.split("&&")[1];
             List<String> commandList = new ArrayList<>();
             //进入项目的日志文件目录
-            commandList.add(String.format("cd /data/logs/lizhi/%s/%s_idx0/",dir, dir));
+            commandList.add(String.format("cd /data/logs/lizhi/%s/",dir, dir));
             //执行查看日志命令
             commandList.add("tail -f server.log |grep 'received' ");
 
-
-            new OnlineCheckLog().new LinuxShell(name, server, commandList).start();
+            new DockerCheckLog().new LinuxShell(name, server, commandList).start();
         }
     }
 
+    /**
+     * 不是密钥登录不使用
+     */
     public static class MyUserInfo implements UserInfo {
         private String passphrase = null;
 
@@ -132,11 +123,9 @@ public class OnlineCheckLog {
             ChannelShell channel = null;
             try {
                 JSch sshSingleton = new JSch();
-                sshSingleton.addIdentity(keyFile);
 
-                session = sshSingleton.getSession(USER, SERVER, PORT);
-                UserInfo ui = new MyUserInfo(PASSWORD);
-                session.setUserInfo(ui);
+                session = sshSingleton.getSession(USER, server, PORT);
+                session.setPassword(PASSWORD);
                 Properties config = new Properties();
                 //设置 SSH 连接时不进行公钥确认
                 config.put("StrictHostKeyChecking", "no");
@@ -153,7 +142,6 @@ public class OnlineCheckLog {
                 channel.connect();
 
                 //发送linux命令
-                pipeOut.write((server + "\n").getBytes());
                 for (String command : commandList) {
                     pipeOut.write((command + "\n").getBytes());
                 }
