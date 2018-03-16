@@ -1,6 +1,8 @@
 package com.example.demo;
 
+import com.google.common.base.Charsets;
 import com.google.common.base.Strings;
+import com.google.common.hash.Hashing;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.joda.time.DateTime;
 import org.junit.Test;
@@ -114,5 +116,14 @@ public class TestJava {
         int j = 129;
         System.out.println(i == j);
         System.out.println(i.equals(j));
+    }
+
+
+    @Test
+    public void testRedMd5(){
+        String password = "2";
+        String result = Hashing.md5().newHasher().putString(password, Charsets.UTF_8).hash().toString()
+                .substring(8, 24);
+        System.out.println(result);
     }
 }

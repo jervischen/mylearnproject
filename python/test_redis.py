@@ -44,6 +44,7 @@ fan_key = 'LZ_LIVE_ACTIVITY_FAN_SORTED_SET_PEACH_'
 # redis连接
 r = redis.Redis(host=redis_host, port=redis_port)
 
+
 mission_level = ['_3', '_2', '_1']
 for level in mission_level:
     if level == '_3':
@@ -55,7 +56,9 @@ for level in mission_level:
 
     # 主播
     nj_list = r.zrevrangebyscore(sort_key + date_yest + level, "+inf", "-inf", 0, 3)
+    print(type(nj_list))
     for i in range(len(nj_list)):
+        print("主播id==", str(nj_list[i]))
         cursor_ex.execute(sql_band % int(nj_list[i]))
         row_band = cursor_ex.fetchone()
         cursor_ex.execute(sql_user % int(nj_list[i]))
@@ -68,7 +71,7 @@ for level in mission_level:
             row_band = cursor_ex.fetchone()
             cursor_ex.execute(sql_user % int(fan_id))
             row_user = cursor_ex.fetchone()
-            print("粉丝:" + row_band['band'] + "   " + row_user['name']+"  "+bytes.decode(fan_id))
+            print("粉丝:" + row_band['band'] + "   " + row_user['name'] + "  " + bytes.decode(fan_id))
         print()
 
 # 提交，不然无法保存新建或者修改的数据
@@ -77,4 +80,3 @@ connection.commit()
 cursor_ex.close()
 # 关闭连接
 connection.close()
-
