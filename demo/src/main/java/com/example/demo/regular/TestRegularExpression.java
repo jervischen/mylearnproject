@@ -147,5 +147,29 @@ public class TestRegularExpression {
         return count;
     }
 
+    public static String StringFilter2(String medalName) {
+        if (Strings.isNullOrEmpty(medalName)) {
+            return null;
+        }
+
+        //勋章名字长度最长为3
+        String newMedalName = "";
+        String regEx = "^[a-z0-9A-Z\\u4e00-\\u9fa5]+$";
+        Pattern p = Pattern.compile(regEx);
+        for (char ch : medalName.toCharArray()) {
+            Matcher m = p.matcher(String.valueOf(ch));
+            if (m.matches()) {
+                newMedalName += String.valueOf(ch);
+            }
+
+            if (newMedalName.length() == 3) {
+                break;
+            }
+        }
+
+        return newMedalName;
+    }
+
+
 
 }

@@ -2,6 +2,7 @@ package com.example.demo;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.parser.Feature;
 import com.example.demo.bean.Content;
 import com.example.demo.bean.MyData;
 import com.example.demo.bean.MyMsg;
@@ -47,13 +48,13 @@ public class TestJson {
         String json = "{ \"_id\" : \"5a757d42420ecf4711c6811e\", \"content\" : { \"id\" : 2650899860319638593, \"text\" : \"耽美广播剧\" }, \"fromUser\" : { \"id\" : 2531992760048922668, \"name\" : \"『重生』我不是我自己\" }, \"type\" : 27, \"createTime\" : 1517649218522, \"checkRubbish\" : true, \"status\" : 2, \"extinfo\" : { \"filterStatus\" : 2, \"hitKeyWord\" : { \"hitKeyWord\" : [\"耽美\", \"广播剧\"] }, \"rcode\" : 0 }, \"reviewUser\" : { \"id\" : 23, \"name\" : \"wuyujie\" }, \"modifyTime\" : 1517819912812 }";
         JSONObject jsonObject = JSON.parseObject(json);
         System.out.println(jsonObject.get("content"));
-        System.out.println(((JSONObject)jsonObject.get("fromUser")).get("id"));
+        System.out.println(((JSONObject) jsonObject.get("fromUser")).get("id"));
 
 
         System.out.println(jsonObject.get("type"));
         System.out.println("27".equals(jsonObject.get("type").toString()));
 
-        Content content = JSON.parseObject(jsonObject.get("content").toString(),Content.class);
+        Content content = JSON.parseObject(jsonObject.get("content").toString(), Content.class);
         System.out.println(content);
 
         System.out.println(JSON.parseObject(json, MyMsg.class));
@@ -69,10 +70,15 @@ public class TestJson {
 
 
     @Test
-    public void testA(){
+    public void testA() {
         String password = "biubiu biu ";
         String substring = Hashing.md5().newHasher().putString(password, Charsets.UTF_8).hash().toString()
                 .substring(8, 24);
         System.out.println(substring);
+    }
+
+    @Test
+    public void testB() {
+
     }
 }
