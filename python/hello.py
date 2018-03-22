@@ -1,8 +1,9 @@
 import keyword
 import math
 import sys
+import datetime
 
-print(keyword.kwlist)
+# print(keyword.kwlist)
 
 if __name__ == '__main__':
     print('程序自身在运行')
@@ -31,3 +32,13 @@ print("MyClass 类的属性 i 为：", x.i)
 print("MyClass 类的方法 f 输出为：", x.f())
 i=complex(1, 2)
 print(i)
+
+today = datetime.datetime.today()
+print(today)
+
+begin = today.strftime("%Y%m%d")
+print(begin)
+print(type(begin))
+
+d = datetime.timedelta(days=2)  # 昨天
+print(today - d)

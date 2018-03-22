@@ -4,13 +4,13 @@ import datetime
 import pymysql
 
 #用户信息数据库
-host = "r_app_db_server.lzfm.com"
+host = "172.17.6.232"
 port = 3306
-user = "lizhi_admin"
-password = "lizhi_app!ee12"
+user = "fmuser"
+password = "fmpass"
 
-redis_host = '192.168.1.20'
-redis_port = '6021'
+redis_host = '172.17.6.232'
+redis_port = '6379'
 
 
 def getMySQLConnection(host, port, user, password, database="lizhi_app", charset='utf8'):
@@ -70,7 +70,6 @@ for level in mission_level:
             cursor_ex.execute(sql_user % int(fan_id))
             row_user = cursor_ex.fetchone()
             print("粉丝:" + row_band['band'] + "   " + row_user['name']+"  "+bytes.decode(fan_id))
-        print()
 
 # 提交，不然无法保存新建或者修改的数据
 connection.commit()

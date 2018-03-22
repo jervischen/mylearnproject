@@ -35,7 +35,8 @@ def getYesterday():
 
 
 # 获取昨天日期
-date_yest = getYesterday().strftime("%Y%m%d")
+#date_yest = getYesterday().strftime("%Y%m%d")
+date_yest = '20180314'
 print(date_yest)
 # 主播排行key
 sort_key = 'LZ_LIVE_ACTIVITY_RANK_SORTED_SET_PEACH_'
@@ -55,8 +56,10 @@ for level in mission_level:
         print("桃花之妖怪")
 
     # 主播
-    nj_list = r.zrevrangebyscore(sort_key + date_yest + level, "+inf", "-inf", 0, 3)
+    nj_list = r.zrevrangebyscore(sort_key + '20180314' + level, "+inf", "-inf", 0, 3,withscores=True)
     print(type(nj_list))
+    print(type(nj_list[0]))
+    break;
     for i in range(len(nj_list)):
         print("主播id==", str(nj_list[i]))
         cursor_ex.execute(sql_band % int(nj_list[i]))

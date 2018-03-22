@@ -69,7 +69,7 @@
       <textMaps />
     </LinkMapSettings>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="Python 3.6" project-jdk-type="Python SDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="false">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="ThriftCompiler">
