@@ -30,6 +30,9 @@ public class DockerCheckAlive {
             String name = (String) serverProp.getKey();
             String server = (String) serverProp.getValue();
 
+            if(name.startsWith("docker1")){
+                continue;
+            }
             new DockerCheckAlive().new LinuxExec(name, server).start();
         }
     }

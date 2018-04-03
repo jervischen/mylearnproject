@@ -15,7 +15,13 @@ import java.io.InputStreamReader;
 import java.nio.charset.IllegalCharsetNameException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -120,10 +126,42 @@ public class TestJava {
 
 
     @Test
-    public void testRedMd5(){
-        String password = "2";
+    public void testRedMd5() {
+        String password = "5566";
         String result = Hashing.md5().newHasher().putString(password, Charsets.UTF_8).hash().toString()
                 .substring(8, 24);
         System.out.println(result);
+    }
+
+    @Test
+    public void testList() {
+        List<String> list = new ArrayList<>();
+        list.add("a");
+        list.add("b");
+        System.out.println(list.toString());
+        List<String> strings = Arrays.asList(list.toString());
+
+    }
+
+    @Test
+    public void testListSort() {
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(3);
+        list.add(2);
+        list.add(1);
+        /**等级倒序排序**/
+        Collections.sort(list, new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                if (o1 > o2) {
+                    return 1;
+                } else {
+                    return -1;
+                }
+            }
+        });
+
+        System.out.println(list.toString());
     }
 }

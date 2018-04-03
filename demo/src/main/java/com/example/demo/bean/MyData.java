@@ -1,35 +1,24 @@
 package com.example.demo.bean;
 
+import lombok.Data;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created in 2018-02-01 19:53.
  *
  * @author chenxiao
  */
-
+@Data
 public class MyData {
 
     private boolean isFull;
 
     private boolean urlShareable=false;
 
+    private Map<String,Integer> map;
 
-
-    public boolean isFull() {
-        return isFull;
-    }
-
-    public void setFull(boolean full) {
-        isFull = full;
-    }
-
-    public boolean isUrlShareable() {
-        return urlShareable;
-    }
-
-    public void setUrlShareable(boolean urlShareable) {
-        this.urlShareable = urlShareable;
-    }
 }

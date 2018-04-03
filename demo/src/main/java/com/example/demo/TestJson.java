@@ -12,6 +12,7 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -78,7 +79,15 @@ public class TestJson {
     }
 
     @Test
-    public void testB() {
+    public void testMap() {
+        MyData data = new MyData();
+        Map<String,Integer> map = new HashMap<String,Integer>();
+        map.put("round1",1);
+        map.put("round2",2);
+        map.put("round3",3);
 
+        data.setMap(map);
+        System.out.println(JSONObject.toJSON(data));
+        System.out.println(JSONObject.toJSON(map));
     }
 }
