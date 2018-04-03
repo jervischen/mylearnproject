@@ -21,9 +21,9 @@ class MySql:
             self._conn = pymysql.connect(host=dbconfig['host'],
                                          port=dbconfig['port'],
                                          user=dbconfig['user'],
-                                         password=dbconfig['password'],
-                                         database=dbconfig['database'],
-                                         charset='utf-8',
+                                         password=dbconfig['passwd'],
+                                         database=dbconfig['dbName'],
+                                         charset='utf8',
                                          cursorclass=pymysql.cursors.DictCursor)
         except pymysql.Error as e:
             self.error_code = e.args[0]
@@ -38,6 +38,9 @@ class MySql:
                 return self.__init__(dbconfig)
             else:
                 raise Exception(error_msg)
+        finally:
+            self._cur = self._conn.cursor()
+            self._instance = pymysql
 
     def query(self, sql):
         u'执行 select 语句'

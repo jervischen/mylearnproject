@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #导入xlwt模块
-import xlwt
+import xlrd
 # 创建一个Workbook对象，这就相当于创建了一个Excel文件
 book = xlwt.Workbook(encoding='utf-8', style_compression=0)
 '''
