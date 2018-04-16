@@ -32,33 +32,39 @@ public class TestGuava {
     static LoadingCache<String, Optional<String>> cahceBuilder;
 
 
+    static LoadingCache<String, String> cahceBuilder1;
+
+
     @Before
     public void junitInit() {
         cahceBuilder = CacheBuilder.newBuilder().maximumSize(3)
                 .build(new CacheLoader<String, Optional<String>>() {
                     @Override
                     public Optional<String> load(String key) throws Exception {
-                        return init(key);
+                        return initOption(key);
                     }
                 });
     }
 
-    public Optional<String> init(String key) throws Exception {
+
+
+    public Optional<String> initOption(String key) throws Exception {
         Map<String, String> cacheMap = Maps.newHashMap();
         cacheMap.put("a", "a");
         cacheMap.put("b", "b");
         cacheMap.put("c", "c");
 
-        if(key.equals("d")){
+        if (key.equals("d")) {
             cacheMap.put("d", "d");
         }
-
         String value = cacheMap.get(key);
         if (value != null) {
             return Optional.of(value);
         }
         return Optional.absent();
     }
+
+
 
     @Test
     public void testNull() throws Exception {
@@ -67,12 +73,49 @@ public class TestGuava {
         System.out.println(cahceBuilder.get("b"));
         System.out.println(cahceBuilder.get("c"));
         System.out.println(cahceBuilder.get("d"));
+        System.out.println(cahceBuilder.get("e"));
 
         System.out.println("=================");
         Set<String> set = cahceBuilder.asMap().keySet();
-        for (String s : set){
+        for (String s : set) {
             System.out.println(cahceBuilder.asMap().get(s));
         }
+    }
+
+    @Before
+    public void junitInit1() {
+        cahceBuilder1 = CacheBuilder.newBuilder().maximumSize(3)
+                .build(new CacheLoader<String, String>() {
+                    @Override
+                    public String load(String key) throws Exception {
+                        return init(key);
+                    }
+                });
+    }
+
+    public String init(String key) throws Exception {
+        Map<String, String> cacheMap = Maps.newHashMap();
+        cacheMap.put("a", "a");
+        cacheMap.put("b", "b");
+        cacheMap.put("c", "c");
+
+        if (key.equals("d")) {
+            cacheMap.put("d", "d");
+        }
+
+        String value = cacheMap.get(key);
+        return value;
+    }
+
+    @Test
+    public void cahceBuilder1() throws Exception {
+        //返回null则报错
+        System.out.println(cahceBuilder1.get("a"));
+        System.out.println(cahceBuilder1.get("b"));
+        System.out.println(cahceBuilder1.get("c"));
+        System.out.println(cahceBuilder1.get("d"));
+        System.out.println(cahceBuilder1.getUnchecked("e"));
+
     }
 
 }

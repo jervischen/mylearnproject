@@ -141,6 +141,8 @@ public class TestJava {
         System.out.println(list.toString());
         List<String> strings = Arrays.asList(list.toString());
 
+        List<String> listA = new ArrayList<>();
+        System.out.println(listA.get(0));
     }
 
     @Test
@@ -163,5 +165,25 @@ public class TestJava {
         });
 
         System.out.println(list.toString());
+    }
+
+    @Test
+    public void testFor(){
+        for (int i = 0; i < 10; i+=2) {
+            System.out.println(i);
+            System.out.println(i+1);
+        }
+    }
+
+    @Test
+    public void testDate(){
+
+        SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        try {
+            Date date = sd.parse("2018-04-10 11:00");
+            System.out.println(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
     }
 }
