@@ -105,11 +105,12 @@ def get_new_fansmedal(start1, end1, start2, end2, njId):
 
 def get_top3_exp(start, end, njId):
     sql = """
-        (SELECT nj_id,user_id,SUM(increase_exp) ex FROM fans_exp_history 
+        SELECT * FROM     
+        (SELECT nj_id,user_id,SUM(increase_exp) exp FROM fans_exp_history 
         WHERE create_time BETWEEN '%s' AND '%s'
         AND nj_id=%d
-        GROUP BY nj_id,user_id)e 
-        ORDER BY e.ex DESC LIMIT 3
+        GROUP BY nj_id,user_id) e 
+        ORDER BY e.exp DESC LIMIT 3
     """
     fansDB.query(sql % (start, end, int(njId)))
     return fansDB.fetchAllRows()
@@ -151,24 +152,30 @@ def make_row_sheet(sheet, row_num, sheet_list):
         print("类型错误")
 
 
-def read_excle(fileName):
-    workbook = xlrd.open_workbook(fileName)
-    sheet = workbook.sheet_by_index(0)
-    return sheet.col_values(2, start_rowx=1)
+def read_excle(filename, sheetnmu, col):
+    workbook = xlrd.open_workbook(filename)
+    sheet = workbook.sheet_by_index(sheetnmu)
+    return sheet.col_values(col, start_rowx=1)
 
 
 # 新粉丝勋章人数
 def new_medal():
-    start1 = getYesterday(28).strftime("%Y-%m-%d") + " 00:00:00"
-    end1 = getYesterday(28).strftime("%Y-%m-%d") + " 23:59:59"
+    #应该减26
+    # start1 = getYesterday(28).strftime("%Y-%m-%d") + " 00:00:00"
+    # end1 = getYesterday(28).strftime("%Y-%m-%d") + " 23:59:59"
+    #
+    # start2 = getYesterday(1).strftime("%Y-%m-%d") + " 00:00:00"
+    # end2 = getYesterday(1).strftime("%Y-%m-%d") + " 23:59:59"
 
-    start2 = getYesterday(1).strftime("%Y-%m-%d") + " 00:00:00"
-    end2 = getYesterday(1).strftime("%Y-%m-%d") + " 23:59:59"
+    start1 = "2018-03-17 00:00:00"
+    end1 = "2018-04-12 00:00:00"
+
+    start2 = "2018-04-12 00:00:00"
+    end2 = "2018-04-14 23:59:59"
 
     print("时间：" + start1, end1, start2, end2)
-    read_excle("njList.xlsx")
     content_sheet_list = []
-    for band in read_excle():
+    for band in read_excle("njList.xlsx", 0, 2):
         user = get_user_by_band(int(band))
         if not user:
             print("错误波段号", int(band))
@@ -197,22 +204,24 @@ def top10_new_medal_exp():
     end = "2018-04-16 23:59:59"
 
     print("时间：" + start, end)
-    read_excle("top10nj.xlsx")
-    for band in read_excle():
+    for band in read_excle("top10.xlsx", 4, 2):
         nj = get_user_by_band(int(band))
         if not nj:
             print("错误波段号", int(band))
             continue
-        exp = get_top3_exp(start, end, nj["id"])
-        for ex in exp:
-            user_band = get_band(int(ex["user_id"]))
-            print("主播波段号：" + band + "粉丝波段号：" + user_band["band"] + "经验值：" + ex["exp"])
+        userExp = get_top3_exp(start, end, int(nj["id"]))
+        for exp in userExp:
+            user_band = get_band(int(exp["user_id"]))
+            fans = get_user_by_band(int(user_band["band"]))
+            print("主播波段号：%d,主播昵称：%s,粉丝波段号：%d,粉丝昵称%s,经验值：%d" % (int(band),str(nj["name"]) ,int(user_band["band"]),str(fans["name"]) , int(exp["exp"])))
+            print("主播波段号：%d,主播昵称：%s,粉丝波段号：%d,粉丝昵称%s,经验值：%d" % (int(band),str(nj["name"]), int(user_band["band"]),str(fans["name"]) , int(exp["exp"])))
 
 
 if __name__ == "__main__":
     print("开始:", datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
     try:
         new_medal()
+        # top10_new_medal_exp()
     except Exception as e:
         print(e)
     finally:
