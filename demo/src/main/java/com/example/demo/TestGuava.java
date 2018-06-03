@@ -1,15 +1,19 @@
 package com.example.demo;
 
+import com.google.common.base.Function;
 import com.google.common.base.Optional;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
+import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
+import com.google.common.collect.Ordering;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentMap;
@@ -116,6 +120,41 @@ public class TestGuava {
         System.out.println(cahceBuilder1.get("d"));
         System.out.println(cahceBuilder1.getUnchecked("e"));
 
+    }
+
+    @Test
+    public void testStaticOrdering(){
+        List<Integer> list = Lists.newArrayList();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+
+
+        System.out.println("list:"+ list);
+
+        Ordering<Integer> naturalOrdering = Ordering.natural();
+        Ordering<Object> usingToStringOrdering = Ordering.usingToString();
+        Ordering<Object> arbitraryOrdering = Ordering.arbitrary();
+        System.out.println("naturalOrdering:"+ naturalOrdering.sortedCopy(list));
+        System.out.println("usingToStringOrdering:"+ usingToStringOrdering.sortedCopy(list));
+        System.out.println("arbitraryOrdering:"+ arbitraryOrdering.sortedCopy(list));
+
+        Integer min = Ordering.natural().onResultOf(new Function<Integer, Integer>() {
+            @Override
+            public Integer apply(Integer input) {
+                return input;
+            }
+        }).min(list);
+
+        Integer max = Ordering.natural().onResultOf(new Function<Integer, Integer>() {
+            @Override
+            public Integer apply(Integer input) {
+                return input;
+            }
+        }).max(list);
+
+        System.out.println("最小：" + min);
+        System.out.println("最大：" + max);
     }
 
 }

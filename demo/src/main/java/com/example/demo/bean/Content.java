@@ -1,6 +1,8 @@
 package com.example.demo.bean;
 
+import lombok.Builder;
 import lombok.Data;
+import lombok.ToString;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,6 +12,8 @@ import org.slf4j.LoggerFactory;
  * @author chenxiao
  */
 @Data
+@ToString
+@Builder
 public class Content {
     /**
      * 红包id

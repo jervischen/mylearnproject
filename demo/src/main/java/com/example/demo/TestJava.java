@@ -1,7 +1,9 @@
 package com.example.demo;
 
+import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.google.common.base.Charsets;
 import com.google.common.base.Strings;
+import com.google.common.collect.Lists;
 import com.google.common.hash.Hashing;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.joda.time.DateTime;
@@ -22,6 +24,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -168,15 +171,15 @@ public class TestJava {
     }
 
     @Test
-    public void testFor(){
-        for (int i = 0; i < 10; i+=2) {
+    public void testFor() {
+        for (int i = 0; i < 10; i += 2) {
             System.out.println(i);
-            System.out.println(i+1);
+            System.out.println(i + 1);
         }
     }
 
     @Test
-    public void testDate(){
+    public void testDate() {
 
         SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         try {
@@ -185,5 +188,49 @@ public class TestJava {
         } catch (ParseException e) {
             e.printStackTrace();
         }
+    }
+
+    @Test
+    public void testYu() {
+        int RANK_PK = 0x04;
+        System.out.println(RANK_PK);
+        System.out.println(1 & RANK_PK);
+        System.out.println(2 & RANK_PK);
+        System.out.println(3 & RANK_PK);
+        System.out.println(4 & RANK_PK);
+        System.out.println(4 == RANK_PK);
+
+    }
+
+    @Test
+    public void testSwitch() {
+        int i = 0;
+        switch (i) {
+            case 0:
+
+            case 1:
+                System.out.println("1");
+                break;
+            case 2:
+                System.out.println("2");
+                break;
+            default:
+                System.out.println("-1");
+        }
+    }
+
+
+    @Test
+    public void testDoWhile(){
+        do {
+            System.out.println(111);
+        } while (false);
+        System.out.println(222);
+    }
+
+    @Test
+    public void testStringSplit(){
+        String s = "lizhi_red_envelope";
+        System.out.println(s.substring(0,14));
     }
 }

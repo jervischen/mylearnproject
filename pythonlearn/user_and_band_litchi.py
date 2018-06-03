@@ -22,21 +22,21 @@ gpassword = "liveR0912GIFT"
 redis_host = '192.168.1.20'
 redis_port = '6021'
 
-# # docker环境
-# uhost = "172.17.6.232"
-# uport = 3306
-# udatabase = "lizhi_app"
-# uuser = "fmuser"
-# upassword = "fmpass"
-#
-# ghost = "172.17.6.232"
-# gport = 3306
-# gdatabase = "lizhi_live_gift"
-# guser = "fmuser"
-# gpassword = "fmpass"
-#
-# redis_host = '172.17.6.232'
-# redis_port = '6379'
+# docker环境
+uhost = "172.17.6.232"
+uport = 3306
+udatabase = "lizhi_app"
+uuser = "fmuser"
+upassword = "fmpass"
+
+ghost = "172.17.6.232"
+gport = 3306
+gdatabase = "lizhi_live_gift"
+guser = "fmuser"
+gpassword = "fmpass"
+
+redis_host = '172.17.6.232'
+redis_port = '6379'
 
 
 def getMySQLConnection(host, port, user, password, database, charset='utf8'):

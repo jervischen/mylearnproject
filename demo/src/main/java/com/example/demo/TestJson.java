@@ -6,6 +6,7 @@ import com.alibaba.fastjson.parser.Feature;
 import com.example.demo.bean.Content;
 import com.example.demo.bean.MyData;
 import com.example.demo.bean.MyMsg;
+import com.example.demo.bean.SocialRedEnvelopeMsg;
 import com.google.common.base.Charsets;
 import com.google.common.hash.Hashing;
 import org.junit.Test;
@@ -81,13 +82,21 @@ public class TestJson {
     @Test
     public void testMap() {
         MyData data = new MyData();
-        Map<String,Integer> map = new HashMap<String,Integer>();
-        map.put("round1",1);
-        map.put("round2",2);
-        map.put("round3",3);
+        Map<String, Integer> map = new HashMap<String, Integer>();
+        map.put("round1", 1);
+        map.put("round2", 2);
+        map.put("round3", 3);
 
         data.setMap(map);
         System.out.println(JSONObject.toJSON(data));
         System.out.println(JSONObject.toJSON(map));
     }
+
+    @Test
+    public void testObject() {
+        SocialRedEnvelopeMsg s = new SocialRedEnvelopeMsg();
+        System.out.println(JSONObject.toJSON(s));
+    }
+
+
 }
