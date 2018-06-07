@@ -14,7 +14,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="TestGuava.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/TestGuava.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="164" column="9" lean-forward="true" selection-start-line="164" selection-start-column="9" selection-end-line="164" selection-end-column="9" />
+              <folding>
+                <element signature="e#1144#1387#0" expanded="true" />
+                <element signature="e#1386#1387#0" expanded="true" />
+                <element signature="e#2523#2740#0" expanded="true" />
+                <element signature="e#2739#2740#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -114,7 +130,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/lizhibean/pk/NextPkInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/lizhibean/pk/PkInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/lizhibean/LizhiTestJson.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/TestGuava.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/thread/TestPool.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/bean/MyData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/bean/Content.java" />
@@ -125,6 +140,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/H5CryptUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/TestTime.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/TestJava.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/TestGuava.java" />
       </list>
     </option>
   </component>
@@ -160,14 +176,25 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-33" />
-    <option name="y" value="218" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="646" />
+    <option name="y" value="91" />
+    <option name="width" value="1932" />
+    <option name="height" value="1045" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -284,8 +311,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -338,23 +364,13 @@
               <item name="example" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="optimizing" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -402,31 +418,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestJava.testStringSplit">
+  <component name="RunManager" selected="JUnit.TestGuava.testExpire">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-    </configuration>
-    <configuration name="H5CryptUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.H5CryptUtil" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="demo" />
-      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -441,6 +438,56 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration name="TestGuava.cahceBuilder1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="demo" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.example.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.TestGuava" />
+      <option name="METHOD_NAME" value="cahceBuilder1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestGuava.testExpire" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="demo" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.example.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.TestGuava" />
+      <option name="METHOD_NAME" value="testExpire" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration name="TestJava.testStringSplit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -480,31 +527,6 @@
       <option name="PACKAGE_NAME" value="com.example.demo" />
       <option name="MAIN_CLASS_NAME" value="com.example.demo.TestTime" />
       <option name="METHOD_NAME" value="currentWeek" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="TestTime.getRankPkNamePostfix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="demo" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.example.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.TestTime" />
-      <option name="METHOD_NAME" value="getRankPkNamePostfix" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -610,19 +632,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.DemoApplication" />
-      <item index="1" class="java.lang.String" itemvalue="Application.H5CryptUtil" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestTime.getRankPkNamePostfix" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestTime.yuejie" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestTime.currentWeek" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.TestJava.testStringSplit" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestTime.yuejie" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestTime.currentWeek" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestJava.testStringSplit" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestGuava.cahceBuilder1" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.TestGuava.testExpire" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestJava.testStringSplit" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestTime.currentWeek" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestTime.yuejie" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestTime.getRankPkNamePostfix" />
-        <item index="4" class="java.lang.String" itemvalue="Application.H5CryptUtil" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestGuava.testExpire" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestGuava.cahceBuilder1" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestJava.testStringSplit" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestTime.currentWeek" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestTime.yuejie" />
       </list>
     </recent_temporary>
   </component>
@@ -678,64 +700,67 @@
       <workItem from="1527565034735" duration="2648000" />
       <workItem from="1527664069549" duration="3477000" />
       <workItem from="1527842214906" duration="6111000" />
+      <workItem from="1528014732311" duration="2100000" />
+      <workItem from="1528097999437" duration="2215000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestJava_testStringSplit - 2018.06.01 at 16h 40m 59s.xml">
-      <configuration name="TestJava.testStringSplit" configurationId="JUnit" />
+    <history-entry file="TestGuava_cahceBuilder1 - 2018.06.04 at 15h 41m 51s.xml">
+      <configuration name="TestGuava.cahceBuilder1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestJava_testStringSplit - 2018.06.01 at 16h 41m 18s.xml">
-      <configuration name="TestJava.testStringSplit" configurationId="JUnit" />
+    <history-entry file="TestGuava_cahceBuilder1 - 2018.06.04 at 15h 42m 07s.xml">
+      <configuration name="TestGuava.cahceBuilder1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestJava_testStringSplit - 2018.06.01 at 16h 44m 15s.xml">
-      <configuration name="TestJava.testStringSplit" configurationId="JUnit" />
+    <history-entry file="TestGuava_cahceBuilder1 - 2018.06.04 at 15h 42m 42s.xml">
+      <configuration name="TestGuava.cahceBuilder1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestJava_testStringSplit - 2018.06.01 at 16h 59m 34s.xml">
-      <configuration name="TestJava.testStringSplit" configurationId="JUnit" />
+    <history-entry file="TestGuava_cahceBuilder1 - 2018.06.04 at 15h 43m 19s.xml">
+      <configuration name="TestGuava.cahceBuilder1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestJava_testStringSplit - 2018.06.01 at 17h 05m 12s.xml">
-      <configuration name="TestJava.testStringSplit" configurationId="JUnit" />
+    <history-entry file="TestGuava_cahceBuilder1 - 2018.06.04 at 15h 44m 00s.xml">
+      <configuration name="TestGuava.cahceBuilder1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTime_currentWeek - 2018.05.30 at 15h 14m 14s.xml">
-      <configuration name="TestTime.currentWeek" configurationId="JUnit" />
+    <history-entry file="TestGuava_cahceBuilder1 - 2018.06.04 at 15h 44m 11s.xml">
+      <configuration name="TestGuava.cahceBuilder1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTime_currentWeek - 2018.05.30 at 15h 16m 25s.xml">
-      <configuration name="TestTime.currentWeek" configurationId="JUnit" />
+    <history-entry file="TestGuava_cahceBuilder1 - 2018.06.04 at 15h 44m 36s.xml">
+      <configuration name="TestGuava.cahceBuilder1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTime_currentWeek - 2018.05.30 at 15h 20m 32s.xml">
-      <configuration name="TestTime.currentWeek" configurationId="JUnit" />
+    <history-entry file="TestGuava_cahceBuilder1 - 2018.06.04 at 15h 45m 06s.xml">
+      <configuration name="TestGuava.cahceBuilder1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTime_currentWeek - 2018.05.30 at 15h 27m 01s.xml">
-      <configuration name="TestTime.currentWeek" configurationId="JUnit" />
+    <history-entry file="TestGuava_testExpire - 2018.06.04 at 18h 29m 37s.xml">
+      <configuration name="TestGuava.testExpire" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestTime_yuejie - 2018.05.29 at 17h 01m 54s.xml">
       <configuration name="TestTime.yuejie" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177316000" />
+    <option name="totallyTimeSpent" value="181631000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-33" y="218" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21226667" sideWeight="0.16017316" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18181819" sideWeight="0.8398268" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.036266666" sideWeight="0.8398268" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977816" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5819761" sideWeight="0.49658704" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972856" sideWeight="0.49658704" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17785527" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32790446" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2801303" sideWeight="0.49829352" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2801303" sideWeight="0.49829352" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3292683" sideWeight="0.48762798" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4904181" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -799,18 +824,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="19" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/jcraft/jsch/0.1.54/jsch-0.1.54-sources.jar!/com/jcraft/jsch/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="517" column="0" lean-forward="false" selection-start-line="517" selection-start-column="0" selection-end-line="517" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -1011,14 +1029,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/TestGuava.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="153" column="13" lean-forward="true" selection-start-line="153" selection-start-column="13" selection-end-line="153" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/bean/Content.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
@@ -1073,7 +1083,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21808">
           <caret line="803" column="16" lean-forward="false" selection-start-line="803" selection-start-column="16" selection-end-line="803" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1115,7 +1124,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1123,7 +1131,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1131,7 +1138,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21666">
           <caret line="1014" column="16" lean-forward="false" selection-start-line="1014" selection-start-column="16" selection-end-line="1014" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1144,14 +1150,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1495">
           <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/TestTime.java">
@@ -1167,6 +1173,27 @@
         <state relative-caret-position="153">
           <caret line="222" column="9" lean-forward="true" selection-start-line="222" selection-start-column="9" selection-end-line="222" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/18.0/guava-18.0-sources.jar!/com/google/common/cache/LocalCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="4823" column="0" lean-forward="false" selection-start-line="4823" selection-start-column="0" selection-end-line="4823" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/TestGuava.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="164" column="9" lean-forward="true" selection-start-line="164" selection-start-column="9" selection-end-line="164" selection-end-column="9" />
+          <folding>
+            <element signature="e#1144#1387#0" expanded="true" />
+            <element signature="e#1386#1387#0" expanded="true" />
+            <element signature="e#2523#2740#0" expanded="true" />
+            <element signature="e#2739#2740#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

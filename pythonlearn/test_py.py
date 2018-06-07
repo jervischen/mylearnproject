@@ -33,3 +33,6 @@ def test_prin():
 if __name__ == '__main__':
     # list_to_map()
     test_prin()
+    time.time()
+
+    print(int(155.5))

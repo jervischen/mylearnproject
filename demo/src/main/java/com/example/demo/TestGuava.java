@@ -2,6 +2,7 @@ package com.example.demo;
 
 import com.google.common.base.Function;
 import com.google.common.base.Optional;
+import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
@@ -17,6 +18,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -104,7 +106,9 @@ public class TestGuava {
         cacheMap.put("c", "c");
 
         if (key.equals("d")) {
-            cacheMap.put("d", "d");
+           // cacheMap.put("d", "d");
+            cahceBuilder1.put("d","d");
+            return cahceBuilder1.get("d");
         }
 
         String value = cacheMap.get(key);
@@ -118,7 +122,8 @@ public class TestGuava {
         System.out.println(cahceBuilder1.get("b"));
         System.out.println(cahceBuilder1.get("c"));
         System.out.println(cahceBuilder1.get("d"));
-        System.out.println(cahceBuilder1.getUnchecked("e"));
+       // System.out.println(cahceBuilder1.getUnchecked("e"));
+        System.out.println(111);
 
     }
 
@@ -155,6 +160,19 @@ public class TestGuava {
 
         System.out.println("最小：" + min);
         System.out.println("最大：" + max);
+    }
+
+    @Test
+    public void testExpire() throws InterruptedException {
+        Cache<String, Integer> familyInviteLimitCache = CacheBuilder.newBuilder().maximumSize(1000)
+                .expireAfterWrite(3, TimeUnit.SECONDS).build();
+        familyInviteLimitCache.put("a",1);
+
+        System.out.println(familyInviteLimitCache.getIfPresent("a"));
+
+        Thread.sleep(5000);
+
+        System.out.println(familyInviteLimitCache.getIfPresent("a"));
     }
 
 }
