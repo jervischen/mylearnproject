@@ -54,6 +54,12 @@
 		</dependency>
 
 		<dependency>
+			<groupId>fm.lizhi.sso</groupId>
+			<artifactId>smart-sso-client</artifactId>
+			<version>0.0.8-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.10</version>

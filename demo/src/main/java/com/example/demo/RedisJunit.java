@@ -42,17 +42,18 @@ public class RedisJunit {
         //      Set<String> keys = jedis.keys("LZ_FANSLEVEL_NJ_FANS_MEDAL*");
 //        Set<String> keys = jedis.keys("LZ_FANSLEVEL_USER_*");
 //        Set<String> keys = jedis.keys("LZ_FANSLEVEL_USER_*2640877571050324524");
-        Set<String> keys = jedis.keys("LZ_FANSLEVEL_NJ_FANS_MEDAL_NAME_INFO_*2640877571050324524");
+        Set<String> keys = jedis.keys("LZ_FAMILY_LOCK_SettleLitchiTask_20190123*");
 //        Set<String> keys = jedis.keys("LZ_FANSLEVEL_USER_*2646620839973229612");
         // Set<String> keys = jedis.keys("chenx*");
 
         System.out.println(keys);
-        Pipeline pl = jedis.pipelined();
+//       Pipeline pl = jedis.pipelined();
         for (String key : keys) {
-            pl.del(key);
+            System.out.println(key);
+//            pl.del(key);
         }
-        pl.sync();
-        System.out.println("删除成功");
+//        pl.sync();
+//        System.out.println("删除成功");
     }
 
     @Test

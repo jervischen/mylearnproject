@@ -39,7 +39,7 @@ public class HttpClientUtil {
 
 			// 创建http GET请求
 			HttpGet httpGet = new HttpGet(uri);
-
+			httpGet.setHeader("lz-accept-language","ar");
 			// 执行请求
 			response = httpclient.execute(httpGet);
 			// 判断返回状�?是否�?00
@@ -73,6 +73,9 @@ public class HttpClientUtil {
 		try {
 			// 创建Http Post请求
 			HttpPost httpPost = new HttpPost(url);
+
+			httpPost.setHeader("lz-accept-language","ar");
+
 			// 创建参数列表
 			if (param != null) {
 				List<NameValuePair> paramList = new ArrayList<NameValuePair>();
@@ -107,12 +110,17 @@ public class HttpClientUtil {
 	
 	
 	public static void main(String[] args) {
-		String url = "https://api.netease.im/sms/sendcode.action";
+	/*	String url = "https://api.netease.im/sms/sendcode.action";
 		Map<String, String> param = new HashMap<String, String>();
 		param.put("mobile", "13798959615");
 		param.put("codeLen", "4");
 		param.put("AppKey", "go9dnk49bkd9jd9vmel1kglw0803mgq3");
 		param.put("CheckSum", "9e9db3b6c9abb2e1962cf3e6f7316fcc55583f86");
-		System.out.println(doPost(url,param));
+		System.out.println(doPost(url,param));*/
+
+	   String getUrl = "http://172.17.36.93:7902//test/language";
+		doGet(getUrl);
+
+
 	}
 }

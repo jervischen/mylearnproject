@@ -3,16 +3,20 @@ package com.example.demo;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.parser.Feature;
+import com.example.demo.bean.CategoryVo;
 import com.example.demo.bean.Content;
 import com.example.demo.bean.MyData;
 import com.example.demo.bean.MyMsg;
 import com.example.demo.bean.SocialRedEnvelopeMsg;
+import com.example.demo.util.DateUtil;
 import com.google.common.base.Charsets;
 import com.google.common.hash.Hashing;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -94,9 +98,52 @@ public class TestJson {
 
     @Test
     public void testObject() {
-        SocialRedEnvelopeMsg s = new SocialRedEnvelopeMsg();
+        CategoryVo s = new CategoryVo();
         System.out.println(JSONObject.toJSON(s));
     }
+
+
+    @Test
+    public void testObjectA() {
+        Calendar now = Calendar.getInstance();
+        int year = now.get(Calendar.YEAR);
+
+        System.out.println(year);
+
+        Long no = 14666L;
+        String noStr = null;
+        if (no >= 10000) {
+            noStr = String.valueOf(no);
+        } else {
+            noStr = String.format("%05d", no);
+        }
+
+        System.out.println(noStr);
+
+       String a = "LZ-CL-201800009-444";
+
+        System.out.println(a.indexOf("-",6));
+        System.out.println(a.substring(0,a.indexOf("-",6)));
+
+        System.out.println(DateUtil.getDayAfter(new Date(),1));
+
+        String st = "com1112222com666";
+        System.out.println(st.replaceAll("com","333"));
+
+
+        Date date = DateUtil.formatStrToNormalDate("2018-07-26 00:00:00");
+        System.out.println(date);
+
+        Date date1 = DateUtil.formatStrToNormalDate("2018-07-26");
+        System.out.println(date1);
+
+        String stA = "LZ-CL-201800049-1";
+        System.out.println(stA.split("-")[3]);
+        long twoDay = 48 * 3600 * 1000;
+        System.out.println(twoDay);
+
+    }
+
 
 
 }
