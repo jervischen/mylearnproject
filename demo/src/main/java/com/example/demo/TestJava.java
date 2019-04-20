@@ -484,6 +484,11 @@ public class TestJava {
         System.out.println(nu.equals(100f));
 
         System.out.println("2019010417".substring(0, 6));
+
+        long[] widgetIds = new long[20];
+        for (long widgetId : widgetIds) {
+            System.out.print(widgetId);
+        }
     }
 
     @Test
