@@ -2,34 +2,26 @@ package com.example.demo;
 
 import com.example.demo.bean.MyData;
 import com.example.demo.util.DateUtil;
-import com.example.demo.util.Student;
-import com.example.demo.util.TimeUtils;
-import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.google.common.base.Charsets;
 import com.google.common.base.Joiner;
 import com.google.common.base.Splitter;
-import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
 import com.google.common.hash.Hashing;
 import fm.lizhi.sso.util.AntPathMatcher;
 import fm.lizhi.sso.util.PathMatcher;
-import jdk.management.resource.internal.inst.SocketOutputStreamRMHooks;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.joda.time.DateTime;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
-import java.nio.charset.IllegalCharsetNameException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Collections;
@@ -43,10 +35,8 @@ import java.util.Objects;
 import java.util.Random;
 import java.util.Set;
 import java.util.UUID;
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
@@ -505,6 +495,11 @@ public class TestJava {
 
         System.out.println(equals);
         System.out.println(pro);
+
+     //   System.out.println(Long.valueOf(null));
+
+        String str = "0xFF10";
+        System.out.println(Long.valueOf(str));
     }
 
     public static void main(String[] args) throws CloneNotSupportedException {

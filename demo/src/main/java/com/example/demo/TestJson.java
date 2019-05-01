@@ -2,12 +2,10 @@ package com.example.demo;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.alibaba.fastjson.parser.Feature;
 import com.example.demo.bean.CategoryVo;
 import com.example.demo.bean.Content;
 import com.example.demo.bean.MyData;
 import com.example.demo.bean.MyMsg;
-import com.example.demo.bean.SocialRedEnvelopeMsg;
 import com.example.demo.util.DateUtil;
 import com.google.common.base.Charsets;
 import com.google.common.hash.Hashing;
@@ -20,6 +18,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created in 2018-02-01 19:57.
@@ -144,6 +143,9 @@ public class TestJson {
 
     }
 
-
+    public static void main(String[] args) {
+        System.out.println(TimeUnit.DAYS.toSeconds(1));
+        System.out.println(TimeUnit.DAYS.toSeconds(10));
+    }
 
 }
