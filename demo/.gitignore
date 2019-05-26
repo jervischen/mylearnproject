@@ -4,6 +4,7 @@
 **/.project
 *.bak
 /target/
+**/target/
 .idea
 demo.iml
 /.idea
