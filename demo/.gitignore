@@ -5,9 +5,9 @@
 *.bak
 /target/
 .idea
-**.iml
-.idea
-.idea/**
+demo.iml
+/.idea
+/.idea/**
 **/.idea
 *.iml
 target
