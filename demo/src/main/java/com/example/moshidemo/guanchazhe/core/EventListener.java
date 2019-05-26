@@ -14,14 +14,14 @@ public class EventListener {
     }
 
 
-    protected  void trigger(Enum call){
+    public   void trigger(Enum call){
         if(!this.events.containsKey(call)){
             return ;
         }
-        trgger(this.events.get(call).setTrigger(call.name()));
+        trigger(this.events.get(call).setTrigger(call.name()));
     }
 
-    private void trgger(Event e) {
+    private void trigger(Event e) {
         e.setSource(this);
         e.setTime(System.currentTimeMillis());
         try {

@@ -13,7 +13,7 @@ public class ObserverTest {
                 Event.class});
 
         Subject subject = new Subject();
-        subject.addListener(SubjectEventType.ADD,observer,method);
+    //    subject.addListener(SubjectEventType.ADD,observer,method);
 
         subject.add();
 
