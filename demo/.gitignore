@@ -6,7 +6,9 @@
 /target/
 **/target/
 .idea
+.idea/**.xml
 demo.iml
+**/**.iml
 /.idea
 /.idea/**
 **/.idea
