@@ -1,4 +1,4 @@
-package com.example.demo.heartbeat;
+package com.example.demo.heartbeat.server;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -56,7 +56,9 @@ public class HeartbeatLinstener {
     // 检测节点是否有效
     public boolean checkNodeValid(String key) {
         if (!nodes.containsKey(key) || !nodeStatus.containsKey(key)) return false;
+
         if ((System.currentTimeMillis() - nodeStatus.get(key)) > timeout) return false;
+
         return true;
     }
 

@@ -1,4 +1,4 @@
-package com.example.demo.heartbeat;
+package com.example.demo.heartbeat.client;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

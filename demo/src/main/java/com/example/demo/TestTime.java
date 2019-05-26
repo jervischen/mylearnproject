@@ -22,6 +22,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.PrimitiveIterator;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created in 2018-01-19 14:13.
@@ -342,6 +343,13 @@ public class TestTime {
     public void testNull(){
         String msg = null;
         System.out.println(msg + "123");
+    }
+    @Test
+    public void testTimeUnit(){
+        long time = System.currentTimeMillis();
+        long l = TimeUnit.MILLISECONDS.toSeconds(time);
+        System.out.println(l);
+        System.out.println(time);
     }
 
 

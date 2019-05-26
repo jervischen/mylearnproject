@@ -1,20 +1,17 @@
-package com.example.demo.heartbeat;
+package com.example.demo.heartbeat.server;
 
-import com.example.demo.heartbeat.client.HeartbeatClient;
-import com.example.demo.heartbeat.server.HeartbeatHandlerImpl;
-import com.example.demo.heartbeat.server.ServiceCenter;
+import com.example.demo.heartbeat.HeartbeatHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 
 /**
- * Created in 2019-04-20 10:17.
+ * Created in 2019-05-22 12:45.
  *
  * @author chenxiao
  */
-public class HeartbeatTest {
-    private static Logger logger = LoggerFactory.getLogger(HeartbeatTest.class);
+public class ServerBoostrap {
     public static void main(String[] args) {
         new Thread(new Runnable() {
             @Override
@@ -29,9 +26,6 @@ public class HeartbeatTest {
                 }
             }
         }).start();
-        Thread client1 = new Thread(new HeartbeatClient());
-        client1.start();
-        Thread client2 = new Thread(new HeartbeatClient());
-        client2.start();
     }
+
 }

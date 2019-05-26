@@ -7,8 +7,6 @@ import com.google.common.base.Joiner;
 import com.google.common.base.Splitter;
 import com.google.common.collect.Lists;
 import com.google.common.hash.Hashing;
-import fm.lizhi.sso.util.AntPathMatcher;
-import fm.lizhi.sso.util.PathMatcher;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.joda.time.DateTime;
 import org.junit.Test;
@@ -57,10 +55,15 @@ public class TestJava {
         tranStr(str);
         System.out.println(str);
     }*/
-
     public static void tranStr(String str) {
         str = "123";
         System.out.println(str);
+
+    }
+    @Test
+    public void tranStr() {
+        int i = 0xFFFFFF1;
+        System.out.println(i);
     }
 
     @Test
@@ -72,6 +75,7 @@ public class TestJava {
         System.out.println(jj);
         System.out.println(jj / 100);
     }
+
 
     @Test
     public void testExcepiton() {
@@ -383,14 +387,6 @@ public class TestJava {
 
     }
 
-    @Test
-    public void zz() {
-        boolean isMatch = Pattern.matches("/recommend/recommend/889", "/recommend/recommend/*");
-        System.out.println("字符串中是否包含了 'runoob' 子字符串? " + isMatch);
-
-        PathMatcher pathMatcher = new AntPathMatcher();
-        System.out.println(pathMatcher.match("/live/comment_style/*", "/live/comment_style/user_list_page"));
-    }
 
     @Test
     public void t() {
@@ -452,6 +448,7 @@ public class TestJava {
         str = "123";
         date = DateUtil.formatStrToDate("2019-12-13", DateUtil.yyyy_MM_dd);
     }
+
     @Test
     public void testClone() {
         TestJava t = new TestJava();
@@ -482,7 +479,7 @@ public class TestJava {
     }
 
     @Test
-    public void testArrayList(){
+    public void testArrayList() {
         List list = Lists.newArrayList();
         list.add(2);
         list.add(1);
@@ -496,14 +493,14 @@ public class TestJava {
         System.out.println(equals);
         System.out.println(pro);
 
-     //   System.out.println(Long.valueOf(null));
+        //   System.out.println(Long.valueOf(null));
 
         String str = "0xFF10";
         System.out.println(Long.valueOf(str));
     }
 
     public static void main(String[] args) throws CloneNotSupportedException {
-        class Student implements Cloneable{
+        class Student implements Cloneable {
             private String name;
 
             @Override
@@ -522,11 +519,11 @@ public class TestJava {
 
         Student st = new Student();
         st.setName("CC");
-        Student clone = (Student)st.clone();
+        Student clone = (Student) st.clone();
         clone.setName("GG");
 
-        System.out.println("st="+st.getName());
-        System.out.println("clone="+clone.getName());
+        System.out.println("st=" + st.getName());
+        System.out.println("clone=" + clone.getName());
 
         ExecutorService executorService = Executors.newFixedThreadPool(5);
 

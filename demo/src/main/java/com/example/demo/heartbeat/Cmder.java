@@ -9,7 +9,7 @@ import java.util.Map;
 
 /**
  * Created in 2019-04-20 10:14.
- *
+ * 客户端需要执行的命令（由服务端返回）
  * @author chenxiao
  */
 public class Cmder implements Serializable {

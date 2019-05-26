@@ -1,5 +1,7 @@
-package com.example.demo.heartbeat;
+package com.example.demo.heartbeat.server;
 
+import com.example.demo.heartbeat.Cmder;
+import com.example.demo.heartbeat.HeartbeatHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,6 +14,7 @@ import java.util.Map;
  */
 public class HeartbeatHandlerImpl implements HeartbeatHandler {
     private static Logger logger = LoggerFactory.getLogger(HeartbeatHandlerImpl.class);
+    @Override
     public Cmder sendHeartBeat(HeartbeatEntity info) {
         HeartbeatLinstener linstener = HeartbeatLinstener.getInstance();
 
@@ -25,12 +28,12 @@ public class HeartbeatHandlerImpl implements HeartbeatHandler {
         cmder.setNodeID(info.getNodeID());
         // ...
 
-        System.out.println("current all the nodes: ");
+        System.out.println("当前所有节点: ");
         Map<String, Object> nodes = linstener.getNodes();
         for (Map.Entry e : nodes.entrySet()) {
             System.out.println(e.getKey() + " : " + e.getValue());
         }
-        System.out.println("hadle a heartbeat");
+        System.out.println("");
         return cmder;
     }
 }

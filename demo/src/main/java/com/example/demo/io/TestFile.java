@@ -39,7 +39,7 @@ public class TestFile {
     public static void write(StringBuilder sb, String outputpath){
         try {
             // 创建一个 FileWriter 实例对象，
-            java.io.FileWriter fw = new FileWriter(outputpath);
+            FileWriter fw = new FileWriter(outputpath);
             // 创建一个 BufferedWriter 实例对象
             BufferedWriter bw = new BufferedWriter(fw);
             bw.write(sb.toString());
