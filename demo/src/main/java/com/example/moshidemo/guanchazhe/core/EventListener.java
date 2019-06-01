@@ -8,9 +8,9 @@ public class EventListener {
 
     Map<Enum, Event> events = new HashMap<Enum, Event>();
 
-    public void addListener(Enum eventType, Object target, Method callback) {
+    public void addListener(Enum eventType, Object source,Object target, Method callback) {
         //注册事件
-        events.put(eventType,new Event(target,callback));
+        events.put(eventType,new Event(source,target,callback));
     }
 
 
@@ -22,7 +22,7 @@ public class EventListener {
     }
 
     private void trigger(Event e) {
-        e.setSource(this);
+      //  e.setSource(this);
         e.setTime(System.currentTimeMillis());
         try {
             e.getCallBack().invoke(e.getTarget(),e);

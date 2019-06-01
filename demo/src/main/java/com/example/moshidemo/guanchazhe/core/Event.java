@@ -24,7 +24,8 @@ public class Event {
 
     private long Time;
 
-    public Event(Object target, Method callBack) {
+    public Event(Object source,Object target, Method callBack) {
+        this.source = source;
         this.target = target;
         this.callBack = callBack;
     }

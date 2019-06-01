@@ -13,10 +13,12 @@ public class CglibProxy implements MethodInterceptor {
 
     private Method callBack;
     private Object observer;
+    private Object target;
 
     public <T> T instance(Class<T> clz,Object observer, Method callBack) {
         this.observer = observer;
         this.callBack = callBack;
+        this.target = clz;
 
         // 通过CGLIB动态代理获取代理对象的过程
         Enhancer enhancer = new Enhancer();
@@ -33,11 +35,12 @@ public class CglibProxy implements MethodInterceptor {
 
         EventListener listener = new EventListener();
         if (method.getName().equalsIgnoreCase(SubjectEventType.ADD.name())){
-            listener.addListener(SubjectEventType.ADD,observer,callBack);
+            listener.addListener(SubjectEventType.ADD,this,observer,callBack);
+          //  listener
             listener.trigger(SubjectEventType.ADD);
         }
 
- //       methodProxy.invokeSuper(obj,objects);
+        methodProxy.invokeSuper(obj,objects);
         return null;
     }
 }
