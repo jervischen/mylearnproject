@@ -6,6 +6,8 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import redis.clients.jedis.Jedis;
+import redis.clients.jedis.ScanParams;
+import redis.clients.jedis.ScanResult;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -25,7 +27,7 @@ public class TestRedis {
 
     static {
         //连接本地的 Redis 服务
-        jedis = new Jedis("172.17.6.232", 6379);
+        jedis = new Jedis("172.17.6.233", 6379);
         //查看服务是否运行
         System.out.println("服务正在运行: " + jedis.ping());
     }
@@ -38,11 +40,15 @@ public class TestRedis {
     }
 
     public static void delRedis() {
-        String key = "LZ_RED_ENVELOPE_QUERY_AVAILABLE_RED_ENVELOPE_SORT_SET_*";
+        String key = "LZ_ENTERNOTICE_ENTER_NOTICES_*";
 
-        Set<String> keys = jedis.keys(key);
-        for (String s : keys) {
-            jedis.del(s);
+        ScanParams scanParams = new ScanParams();
+        scanParams.match(key);
+        scanParams.count(50000);
+        ScanResult<String> scan = jedis.scan(0, scanParams);
+        for (String s : scan.getResult()) {
+            System.out.println(s);
+//           jedis.del(s);
         }
         jedis.close();
     }

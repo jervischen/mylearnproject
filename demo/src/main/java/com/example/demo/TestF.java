@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.CountDownLatch;
 
 /**
  * Created in 2019-03-22 19:24.
@@ -13,8 +14,8 @@ import java.util.Map;
  */
 public class TestF<S> {
 
-    public static void main(String[] args) {
-        Map map = new HashMap();
-        System.out.println(map.get(null));
+    public static void main(String[] args) throws Exception {
+        String value ="1";
+        System.out.println(value.equals(String.valueOf(1)));
     }
 }

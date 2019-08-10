@@ -18,6 +18,7 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * Created in 2018-08-03 15:30.
@@ -125,6 +126,9 @@ public class TestLoadingCache {
     public static void main(String[] args) {
         // testCacheBreakdown();
         testCacheBlock();
+
+        ReentrantLock lock = new ReentrantLock();
+        lock.lock();
     }
 
 }
