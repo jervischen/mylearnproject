@@ -9,8 +9,10 @@
     <modules>
         <module>thritfDemo</module>
 		<module>zkDemo</module>
-		<module>myHystrix</module>
-	</modules>
+		<!--<module>myHystrix</module>-->
+        <module>nettyDemo</module>
+    </modules>
+
     <packaging>pom</packaging>
 
 	<name>demo</name>

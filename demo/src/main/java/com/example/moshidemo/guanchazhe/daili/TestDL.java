@@ -15,8 +15,8 @@ public class TestDL {
                 Event.class});
 
         CglibProxy cglibProxy = new CglibProxy();
-        Subject subject = cglibProxy.instance(Subject.class);
-        subject.addListener(SubjectEventType.ADD,observer,method);
+        Subject subject = cglibProxy.instance(Subject.class,observer,method);
+
 
         subject.add();
 
