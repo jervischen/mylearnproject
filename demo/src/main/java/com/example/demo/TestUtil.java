@@ -42,4 +42,14 @@ public class TestUtil {
             System.out.println(o);
         }
     }
+
+    @Test
+    public void testContain(){
+        String nj="112223344,666";
+        System.out.println(nj.contains("334"));
+
+        int a = 2;
+        int b = 6;
+        System.out.println(a&b);
+    }
 }

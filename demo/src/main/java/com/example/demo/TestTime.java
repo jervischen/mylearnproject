@@ -14,14 +14,7 @@ import org.slf4j.LoggerFactory;
 import java.io.File;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.PrimitiveIterator;
-import java.util.Random;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -268,7 +261,7 @@ public class TestTime {
 
     @Test
     public void testThisDay() {
-         System.out.println(TimeUtils.getPreDay());
+        System.out.println(TimeUtils.getPreDay());
         // 当前时间是否有淘汰赛或者晋级赛
         long now = System.currentTimeMillis();
         long time = TimeUtils.getTheEndOfTheMinute(now);
@@ -287,25 +280,24 @@ public class TestTime {
         System.out.println(preDay);
 
 
-
         System.out.println(TimeUtils.getPreDay(2));
 
-        System.out.println(DateUtil.formatDateToString(new Date(),"yyyyMMddHH"));
+        System.out.println(DateUtil.formatDateToString(new Date(), "yyyyMMddHH"));
         System.out.println(TimeUtils.getThisDay());
 
     }
 
     @Test
-    public void testT(){
+    public void testT() {
         System.out.println(System.currentTimeMillis());
     }
 
     @Test
-    public void testWY(){
-       int num = 10;
+    public void testWY() {
+        int num = 10;
         System.out.println(num << 2);
-        System.out.println(num <<2);
-        System.out.println(1 <<7);
+        System.out.println(num << 2);
+        System.out.println(1 << 7);
         System.out.println(Integer.toBinaryString(2 << 7));
         String s = Integer.toBinaryString(2 << 30);
         System.out.println(s);
@@ -317,6 +309,7 @@ public class TestTime {
     private static long timeFlag() {
         return (System.currentTimeMillis() - baseTime().getTime()) / 1000L;
     }
+
     private static Date baseTime() {
         Calendar c = Calendar.getInstance();
         // Calendar中月从0开始，所以1月是0
@@ -325,7 +318,7 @@ public class TestTime {
     }
 
     @Test
-    public void testMonth(){
+    public void testMonth() {
         Date lastBeginOfMonth = TimeUtils.getLastBeginOfMonth(false, 30);
         Date thisBeginOfMonth = TimeUtils.getThisBeginOfMonth(false, 30);
         Date nextBeginOfMonth = TimeUtils.getNextBeginOfMonth(false, 30);
@@ -340,16 +333,51 @@ public class TestTime {
     }
 
     @Test
-    public void testNull(){
+    public void testNull() {
         String msg = null;
         System.out.println(msg + "123");
     }
+
     @Test
-    public void testTimeUnit(){
+    public void testTimeUnit() {
         long time = System.currentTimeMillis();
         long l = TimeUnit.MILLISECONDS.toSeconds(time);
         System.out.println(l);
         System.out.println(time);
+    }
+
+    @Test
+    public void testGMT() {
+        Calendar cd = Calendar.getInstance();
+        SimpleDateFormat sdf = new SimpleDateFormat("EEE d MMM yyyy HH:mm:ss 'GMT'", Locale.US);
+        sdf.setTimeZone(TimeZone.getTimeZone("GMT+3")); // 设置时区为GMT  +8为北京时间东八区
+        String str = sdf.format(cd.getTime());
+        String str1 = sdf.format(new Date());
+        System.out.println(str);
+        System.out.println(str1);
+    }
+
+    @Test
+    public void testGMT1() {
+        Calendar cd = Calendar.getInstance(TimeZone.getTimeZone("GMT+3"));
+
+        System.out.println(cd.getTime());
+        System.out.println(new Date());
+    }
+
+
+
+    /**
+     * 获得东八区时间
+     *
+     * @return
+     */
+    @Test
+    public void getChinaTime() {
+        TimeZone timeZone = TimeZone.getTimeZone("GMT+3");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        simpleDateFormat.setTimeZone(timeZone);
+        System.out.println(simpleDateFormat.format(new Date()));
     }
 
 

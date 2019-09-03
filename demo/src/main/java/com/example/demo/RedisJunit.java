@@ -25,7 +25,7 @@ public class RedisJunit {
     @BeforeClass
     public static void runOnceBeforeClass() {
         //连接本地的 Redis 服务
-        jedis = new Jedis("172.17.6.232", 6379);
+        jedis = new Jedis("172.17.6.233", 6379);
         //查看服务是否运行
         System.out.println("服务正在运行: " + jedis.ping());
     }
@@ -39,10 +39,10 @@ public class RedisJunit {
 
     @Test
     public void delKeys() {
-        //      Set<String> keys = jedis.keys("LZ_FANSLEVEL_NJ_FANS_MEDAL*");
+        Set<String> keys = jedis.keys("SC_MVP_MEET_UP_CHAT_ROOM_TOTAL_TIME*");
 //        Set<String> keys = jedis.keys("LZ_FANSLEVEL_USER_*");
 //        Set<String> keys = jedis.keys("LZ_FANSLEVEL_USER_*2640877571050324524");
-        Set<String> keys = jedis.keys("LZ_FAMILY_LOCK_SettleLitchiTask_20190123*");
+//        Set<String> keys = jedis.keys("LZ_FAMILY_LOCK_SettleLitchiTask_20190123*");
 //        Set<String> keys = jedis.keys("LZ_FANSLEVEL_USER_*2646620839973229612");
         // Set<String> keys = jedis.keys("chenx*");
 
@@ -50,7 +50,7 @@ public class RedisJunit {
 //       Pipeline pl = jedis.pipelined();
         for (String key : keys) {
             System.out.println(key);
-//            pl.del(key);
+            jedis.del(key);
         }
 //        pl.sync();
 //        System.out.println("删除成功");
