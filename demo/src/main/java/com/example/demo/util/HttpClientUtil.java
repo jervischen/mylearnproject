@@ -120,8 +120,20 @@ public class HttpClientUtil {
 
 
 //	    String getUrl = "http://qaliveoffice.sugchat.com/qrcode/polling";
+//
+//        String getUrl = "http://qalive.sugchat.com/qrcode/polling";
+//        System.out.println(doGet(getUrl));
 
-        String getUrl = "http://qalive.sugchat.com/qrcode/polling";
-        System.out.println(doGet(getUrl));
+        String url = "http://localhost:7938/api/agent/rechargeHistoryList";
+        url = "http://localhost:7938/api/share/home";
+        Map<String, String> param = new HashMap<>();
+        param.put("njId","2640877571050324524");
+        param.put("startTime","2019-08-10 00:00:00");
+        param.put("endTime","2019-10-10 00:00:00");
+        param.put("offset","1");
+        param.put("limit","20");
+        param.put("lztoken","5566");
+        System.out.println(doGet(url,param));
     }
+
 }

@@ -1,5 +1,6 @@
 package com.example.demo.bean;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.ToString;
@@ -12,16 +13,19 @@ import org.slf4j.LoggerFactory;
  * @author chenxiao
  */
 @Data
-@ToString
 @Builder
+@AllArgsConstructor
 public class Content {
     /**
      * 红包id
      */
     private long id;
 
-    private long belongId;
+   // private long belongId;
 
     private String text;
 
+    public String getText() {
+        return "aaa";
+    }
 }
