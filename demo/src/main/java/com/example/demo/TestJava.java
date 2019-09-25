@@ -9,6 +9,8 @@ import com.google.common.collect.Lists;
 import com.google.common.hash.Hashing;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -79,8 +81,11 @@ public class TestJava {
 
     @Test
     public void testExcepiton() {
-        DateTime dateTime = new DateTime("2018-01-27");
-        System.out.println(dateTime.toDate().getTime());
+        DateTime dateTime = new DateTime(1560581275621L);
+        DateTimeFormatter fmt = DateTimeFormat.forPattern("yyyy-MM-dd HH:mm:ss");
+        System.out.println(fmt.print(dateTime));
+        System.out.println(fmt.print(1560581275621L));
+        System.out.println(dateTime.toDate());
     }
 
 

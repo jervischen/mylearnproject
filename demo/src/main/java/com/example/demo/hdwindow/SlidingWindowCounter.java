@@ -49,6 +49,6 @@ public class SlidingWindowCounter {
 
     @Override
     public String toString() {
-        return "total = " + totalCount() + " head = " + head + " >> " + slotBaseCounter;
+        return "SlotBaseCounter.total = " + totalCount() + " SlidingWindowCounter.head = " + head + " >> " + slotBaseCounter;
     }
 }

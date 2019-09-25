@@ -40,12 +40,15 @@ public class SlidingWindowCounterTest {
 
     @Test
     public void test1Window() {
-        SlidingWindowCounter swc = new SlidingWindowCounter(1);
+        SlidingWindowCounter swc = new SlidingWindowCounter(5);
         System.out.println(swc);
         swc.increase();
         swc.increase();
         System.out.println(swc);
         swc.advance();
+        swc.advance();
+        swc.advance();
+
         System.out.println(swc);
         swc.increase();
         swc.increase();

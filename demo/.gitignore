@@ -11,6 +11,7 @@ demo.iml
 **/**.iml
 /.idea
 /.idea/**
+/.idea/**/**
 **/.idea
 *.iml
 target
