@@ -3,7 +3,6 @@ package com.example.moshidemo.guanchazhe.daili;
 import com.example.moshidemo.guanchazhe.core.Event;
 import com.example.moshidemo.guanchazhe.subject.Observer;
 import com.example.moshidemo.guanchazhe.subject.Subject;
-import com.example.moshidemo.guanchazhe.subject.SubjectEventType;
 
 import java.lang.reflect.Method;
 

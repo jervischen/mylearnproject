@@ -1,19 +1,11 @@
 package com.example.demo.redis;
 
-import com.google.common.base.Strings;
-import org.joda.time.DateTime;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.ScanParams;
 import redis.clients.jedis.ScanResult;
-
-import java.math.BigDecimal;
-import java.util.Date;
-import java.util.Set;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * Created in 2018-01-08 18:36.

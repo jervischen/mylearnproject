@@ -1,6 +1,5 @@
 package com.example.demo.lizhibean;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.example.demo.lizhibean.pk.NextPkInfo;
 import com.example.demo.lizhibean.pk.PkInfo;

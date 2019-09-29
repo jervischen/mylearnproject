@@ -1,10 +1,7 @@
 package com.example.demo.bean;
 
-import lombok.Builder;
 import lombok.Data;
 import lombok.ToString;
-
-import java.util.Date;
 
 /**
  * 社交红包消息体

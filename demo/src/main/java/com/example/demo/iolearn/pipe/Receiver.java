@@ -1,7 +1,6 @@
 package com.example.demo.iolearn.pipe;
 
 import java.io.IOException;
-
 import java.io.PipedInputStream;
 
 @SuppressWarnings("all")

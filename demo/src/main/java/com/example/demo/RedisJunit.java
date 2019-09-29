@@ -1,13 +1,9 @@
 package com.example.demo;
 
 import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import redis.clients.jedis.Jedis;
-import redis.clients.jedis.Pipeline;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,8 +1,6 @@
 package com.example.demo.bean;
 
 import lombok.Data;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Created in 2018-02-06 15:28.

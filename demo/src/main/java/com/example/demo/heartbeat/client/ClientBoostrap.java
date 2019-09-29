@@ -1,8 +1,5 @@
 package com.example.demo.heartbeat.client;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 /**
  * Created in 2019-05-22 12:47.
  *

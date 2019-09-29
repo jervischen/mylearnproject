@@ -1,6 +1,5 @@
 package com.example.demo.testguice;
 
-import com.google.inject.Binder;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import org.slf4j.Logger;

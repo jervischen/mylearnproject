@@ -1,8 +1,5 @@
 package com.example.demo.hdwindow;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.util.concurrent.TimeUnit;
 
 /**

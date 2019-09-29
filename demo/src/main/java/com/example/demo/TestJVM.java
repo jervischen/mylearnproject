@@ -1,8 +1,5 @@
 package com.example.demo;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 /**
  * Created in 2018-08-11 15:55.
  *
@@ -10,9 +7,6 @@ import org.slf4j.LoggerFactory;
  */
 public class TestJVM {
     public static void main(String[] args) {
-
-        while (true){
-            System.out.println(1);
-        }
+        System.out.println(1);
     }
 }

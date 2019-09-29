@@ -1,19 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7537d92f-1cf4-4de7-8fa6-65423ee6eaa8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/mogodbUtil/MogoDBMain.java" afterDir="false" />
+    <list default="true" id="7537d92f-1cf4-4de7-8fa6-65423ee6eaa8" name="Default" comment="引入mogodb">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/BugTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/BugTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/RedisJunit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/RedisJunit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/TestEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/TestEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/TestF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/TestF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/TestGuava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/TestGuava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/TestHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/TestHttp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/TestJVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/TestJVM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/TestJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/TestJava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/TestJava8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/TestJava8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/TestJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/TestJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/TestPolling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/TestPolling.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/TestTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/TestTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/TestUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/chenxiao.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dockerserver.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/onlineserver.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/bean/Content.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/bean/Content.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/bean/MyData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/bean/MyData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/bean/MyMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/bean/MyMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/bean/SocialRedEnvelopeMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/bean/SocialRedEnvelopeMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/enumtest/TimeType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/enumtest/TimeType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/guava/TestLoadingCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/guava/TestLoadingCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/hdwindow/Loops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/hdwindow/Loops.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/hdwindow/SlidingWindowCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/hdwindow/SlidingWindowCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/hdwindow/SlidingWindowCounterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/hdwindow/SlidingWindowCounterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/hdwindow/SlotBaseCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/hdwindow/SlotBaseCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/heartbeat/HeartbeatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/heartbeat/HeartbeatHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/heartbeat/client/ClientBoostrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/heartbeat/client/ClientBoostrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/heartbeat/client/HeartbeatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/heartbeat/client/HeartbeatClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/heartbeat/server/ServerBoostrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/heartbeat/server/ServerBoostrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/io/TestFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/io/TestFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/iolearn/TestIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/iolearn/TestIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/iolearn/pipe/PipedStreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/iolearn/pipe/PipedStreamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/iolearn/pipe/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/iolearn/pipe/Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/iolearn/pipe/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/iolearn/pipe/Sender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/jianting/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/jianting/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/jianting/ReadListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/jianting/ReadListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/jianting/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/jianting/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/jianting/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/jianting/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/juc/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/juc/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/juc/DelayQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/juc/DelayQueueTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/linux/DockerCheckLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/linux/DockerCheckLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/linux/OnlineCheckLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/linux/OnlineCheckLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/linux/Shell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/linux/Shell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/linux/TestKeyAcc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/linux/TestKeyAcc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/lizhibean/LizhiTestJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/lizhibean/LizhiTestJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/optimizing/TestFrequency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/optimizing/TestFrequency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/redis/TestDockerMysql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/redis/TestDockerMysql.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/redis/TestPeachDockerRedis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/redis/TestPeachDockerRedis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/redis/TestRedis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/redis/TestRedis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/refactor/hello/AbstractStrategyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/refactor/hello/AbstractStrategyFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/refactor/hello/DefaultFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/refactor/hello/DefaultFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/refactor/hello/MessagetBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/refactor/hello/MessagetBody.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/testguice/FooApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/testguice/FooApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/thread/ThreadPoolExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/thread/ThreadPoolExecutorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/thread/pool/DiscardPolicyDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/thread/pool/DiscardPolicyDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/thread/pool/ExecutorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/thread/pool/ExecutorsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/util/DESUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/util/DESUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/util/GMTDataUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/util/GMTDataUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/util/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/util/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/util/TestStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/util/TestStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/util/TimeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/util/TimeUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/moshidemo/guanchazhe/daili/TestDL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/moshidemo/guanchazhe/daili/TestDL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/moshidemo/guanchazhe/subject/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/moshidemo/guanchazhe/subject/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.demo.DemoApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/bullet_point.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/collapseall.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.demo.DemoApplicationTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/failed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/jquery-1.7.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/Surefire test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/passed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/skipped.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/demo/DemoApplicationTests.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/thritfDemo/target/" />
@@ -29,30 +117,16 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/RedisJunit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="159" column="21" selection-start-line="159" selection-start-column="21" selection-end-line="159" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/mogodbUtil/MogoDBMain.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/TestJVM.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#214#215#0" expanded="true" />
+                <element signature="e#251#252#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,11 +147,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>lz_live_gift_office</find>
-      <find>main</find>
-      <find>mai</find>
-      <find>app_live_call_office</find>
-      <find>connectTimeout</find>
       <find>172.17.33.23</find>
       <find>app_user_office</find>
       <find>172.17.12.12</find>
@@ -97,12 +166,17 @@
       <find>User</find>
       <find>TimeUtils</find>
       <find>firstTask</find>
-      <find>http</find>
       <find>param</find>
       <find>input</find>
       <find>linstener</find>
       <find>Long\.</find>
       <find>cd</find>
+      <find>slf</find>
+      <find>spring</find>
+      <find>fastj</find>
+      <find>http</find>
+      <find>log4j</find>
+      <find>log</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -114,15 +188,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/bean/CategoryVo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/PkFlag.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/uml/learn.puml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/uml/GG.puml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/uml/解约.puml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/TestGoole.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/refactor/hello/MessageStrategy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/refactor/hello/MessagetBody.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/refactor/hello/AbstractStrategyFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/refactor/hello/HelloWorld.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/refactor/hello/DefaultFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/TestEnum.java" />
@@ -132,7 +197,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/util/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/util/TimeUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/thread/pool/DiscardPolicyDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/TestF.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/juc/Message.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/juc/DelayQueueTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/juc/Consumer.java" />
@@ -142,7 +206,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/file/Op.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/file/OpFile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/util/HttpClientUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/heartbeat/HeartbeatEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/heartbeat/HeartbeatHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/heartbeat/HeartbeatHandlerImpl.java" />
@@ -154,7 +217,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/heartbeat/HeartbeatTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/TestJson.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/TestJava.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/moshidemo/guanchazhe/subject/Subject.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/moshidemo/guanchazhe/core/EventListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/moshidemo/guanchazhe/subject/ObserverTest.java" />
@@ -163,8 +225,20 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/TestTime.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/TestUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/RedisJunit.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/mogodbUtil/MogoDBMain.java" />
+        <option value="$PROJECT_DIR$/zkDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/nettyDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/util/HttpClientUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/thread/pool/ExecutorsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/bean/Content.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/util/GMTDataUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/BugTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/TestF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/TestJVM.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/jianting/Event.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/jianting/ReadListener.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -206,24 +280,6 @@
           <item name="demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="thritfDemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="thritfDemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="zkDemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="zkDemo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
       </expand>
       <select />
     </treeState>
@@ -244,8 +300,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -253,45 +307,12 @@
               <item name="demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -305,9 +326,11 @@
     <property name="SearchEverywhereHistoryKey" value="DiscardOldestPolicy&#9;PSI&#9;JAVA://java.util.concurrent.ThreadPoolExecutor.DiscardOldestPolicy&#10;DiscardPolicy&#9;PSI&#9;JAVA://java.util.concurrent.ThreadPoolExecutor.DiscardPolicy&#10;map&#9;PSI&#9;JAVA://java.util.Map" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
@@ -330,6 +353,21 @@
       <recent name="C:\Users\Administrator\Desktop\mygit\mylearnproject\demo\src\main\resources" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="open sc-mvp" />
+      <command value="open scapp-live-comment" />
+      <command value="mvp" />
+      <command value="open scweb_mvp" />
+      <command value="open demo" />
+      <command value="open lz-live-amusement-utils" />
+      <command value="open web-vod-management" />
+      <command value="open ~/IdeaProjects/sc-live-amusement-task" />
+      <command value="open web-live-amusement-task" />
+      <command value="open sugarchat-common-utils" />
+      <command value="open sc-live-act" />
+    </option>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -342,25 +380,65 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RedisJunit.delKeys">
-    <configuration default="true" type="tests" factoryName="Nosetests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Application.TestJVM">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GMTDataUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.util.GMTDataUtil" />
+      <module name="demo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpClientUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.util.HttpClientUtil" />
+      <module name="thritfDemo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestF" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.TestF" />
+      <module name="nettyDemo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestJVM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.TestJVM" />
+      <module name="demo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -391,7 +469,7 @@
       <option name="OPTIONS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="RedisJunit.delKeys" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BugTest.testRandom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -400,76 +478,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.RedisJunit" />
-      <option name="METHOD_NAME" value="delKeys" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestTime.getChinaTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.TestTime" />
-      <option name="METHOD_NAME" value="getChinaTime" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestTime.testGMT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.TestTime" />
-      <option name="METHOD_NAME" value="testGMT" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestTime.testGMT1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.TestTime" />
-      <option name="METHOD_NAME" value="testGMT1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestUtil.testContain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.TestUtil" />
-      <option name="METHOD_NAME" value="testContain" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.BugTest" />
+      <option name="METHOD_NAME" value="testRandom" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -586,6 +596,22 @@
       <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Twisted Trial">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -633,20 +659,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestTime.testGMT" />
-      <item itemvalue="JUnit.TestTime.getChinaTime" />
-      <item itemvalue="JUnit.TestTime.testGMT1" />
-      <item itemvalue="JUnit.TestUtil.testContain" />
+      <item itemvalue="Application.TestF" />
+      <item itemvalue="Application.HttpClientUtil" />
+      <item itemvalue="Application.GMTDataUtil" />
+      <item itemvalue="Application.TestJVM" />
+      <item itemvalue="JUnit.BugTest.testRandom" />
       <item itemvalue="Spring Boot.DemoApplication" />
-      <item itemvalue="JUnit.RedisJunit.delKeys" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RedisJunit.delKeys" />
-        <item itemvalue="JUnit.TestUtil.testContain" />
-        <item itemvalue="JUnit.TestTime.testGMT1" />
-        <item itemvalue="JUnit.TestTime.getChinaTime" />
-        <item itemvalue="JUnit.TestTime.testGMT" />
+        <item itemvalue="Application.TestJVM" />
+        <item itemvalue="JUnit.BugTest.testRandom" />
+        <item itemvalue="Application.GMTDataUtil" />
+        <item itemvalue="Application.TestF" />
+        <item itemvalue="Application.HttpClientUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -747,7 +773,12 @@
       <workItem from="1565419231300" duration="660000" />
       <workItem from="1565419975362" duration="5199000" />
       <workItem from="1565590928139" duration="6135000" />
-      <workItem from="1565924186765" duration="5895000" />
+      <workItem from="1565924186765" duration="18128000" />
+      <workItem from="1567650882070" duration="307000" />
+      <workItem from="1567660226000" duration="38462000" />
+      <workItem from="1569242452500" duration="13721000" />
+      <workItem from="1569732165512" duration="624000" />
+      <workItem from="1569733231382" duration="998000" />
     </task>
     <task id="LOCAL-00001" summary="111">
       <created>1558858638100</created>
@@ -756,19 +787,38 @@
       <option name="project" value="LOCAL" />
       <updated>1558858638100</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="引入mogodb">
+      <created>1567487120128</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567487120128</updated>
+    </task>
+    <task id="LOCAL-00003" summary="引入mogodb">
+      <created>1569388801868</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1569388801868</updated>
+    </task>
+    <task id="LOCAL-00004" summary="忽略文件">
+      <created>1569736491282</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1569736491282</updated>
+    </task>
+    <task id="LOCAL-00005" summary="引入mogodb">
+      <created>1569736522345</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1569736522345</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestTime_testGMT - 2019.08.10 at 16h 15m 27s.xml">
-      <configuration name="TestTime.testGMT" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestTime_getChinaTime - 2019.08.10 at 16h 15m 56s.xml">
-      <configuration name="TestTime.getChinaTime" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestTime_getChinaTime - 2019.08.10 at 16h 16m 06s.xml">
-      <configuration name="TestTime.getChinaTime" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestTime_testGMT1 - 2019.08.10 at 16h 32m 05s.xml">
       <configuration name="TestTime.testGMT1" configurationId="JUnit" />
     </history-entry>
@@ -790,15 +840,75 @@
     <history-entry file="RedisJunit_delKeys - 2019.09.02 at 12h 44m 39s.xml">
       <configuration name="RedisJunit.delKeys" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BugTest_testRandom - 2019.09.27 at 15h 19m 47s.xml">
+      <configuration name="BugTest.testRandom" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BugTest_testRandom - 2019.09.27 at 15h 20m 52s.xml">
+      <configuration name="BugTest.testRandom" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BugTest_testRandom - 2019.09.29 at 12h 36m 30s.xml">
+      <configuration name="BugTest.testRandom" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="467110000" />
+    <option name="totallyTimeSpent" value="533455000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="848" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23819743" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17739628" />
+      <window_info id="Structure" order="1" weight="0.24964234" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Alibaba Cloud Explorer" order="8" weight="0.3297568" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32539684" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
+      <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.48762798" weight="0.32804233" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49829352" weight="0.43253967" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49658704" weight="0.23544973" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="5" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="6" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.17724867" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Spring" order="12" weight="0.1957672" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Alibaba Cloud View" order="15" weight="0.20502645" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="16" visible="true" weight="0.489418" />
+      <window_info anchor="right" id="Maven Projects" order="0" sideWeight="0.8398268" weight="0.0072556552" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" sideWeight="0.48795182" visible="true" weight="0.1296" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32977816" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Bean Validation" order="6" weight="0.11476109" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Palette" order="8" />
+      <window_info anchor="right" id="Commander" order="9" weight="0.4" />
+      <window_info anchor="right" id="Event Log" order="10" sideWeight="0.3262295" side_tool="true" weight="0.26609442" />
+      <window_info anchor="right" id="PlantUML" order="11" weight="0.3296" />
+      <window_info anchor="right" id="SciView" order="12" />
+      <window_info anchor="right" id="Maven" order="13" sideWeight="0.6737705" weight="0.26609442" />
+      <window_info anchor="right" id="Alibaba Log Console" order="14" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17739628" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -807,23 +917,23 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info id="Alibaba Cloud Explorer" order="8" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32625994" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32539684" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.48762798" weight="0.3292683" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49829352" visible="true" weight="0.21087533" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49658704" weight="0.29098806" />
-      <window_info anchor="bottom" id="Terminal" order="5" weight="0.24538545" />
-      <window_info anchor="bottom" id="Run with VisualVM" order="6" />
-      <window_info anchor="bottom" id="Debug with VisualVM" order="7" />
-      <window_info anchor="bottom" id="Message" order="8" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" weight="0.17785527" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Spring" order="13" />
-      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="15" />
-      <window_info anchor="bottom" id="Alibaba Cloud View" order="16" />
+      <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.48762798" weight="0.32850242" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49829352" weight="0.6335979" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49658704" weight="0.23544973" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="5" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="6" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.17785527" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Spring" order="12" visible="true" weight="0.1957672" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Alibaba Cloud View" order="15" weight="0.2055703" />
+      <window_info anchor="bottom" id="Terminal" order="16" weight="0.2579365" />
       <window_info anchor="right" id="Maven Projects" order="0" sideWeight="0.8398268" weight="0.0072556552" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" sideWeight="0.48795182" visible="true" weight="0.1296" />
@@ -834,48 +944,11 @@
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="right" id="Palette" order="8" />
       <window_info anchor="right" id="Commander" order="9" weight="0.4" />
-      <window_info anchor="right" id="Event Log" order="10" sideWeight="0.5120482" side_tool="true" visible="true" weight="0.115879826" />
+      <window_info anchor="right" id="Event Log" order="10" sideWeight="0.3262295" side_tool="true" weight="0.26609442" />
       <window_info anchor="right" id="PlantUML" order="11" weight="0.3296" />
       <window_info anchor="right" id="SciView" order="12" />
-      <window_info anchor="right" id="Maven" order="13" />
+      <window_info anchor="right" id="Maven" order="13" sideWeight="0.6737705" visible="true" weight="0.26609442" />
       <window_info anchor="right" id="Alibaba Log Console" order="14" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23876972" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" visible="true" weight="0.2651633" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.48762798" weight="0.3292683" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49829352" weight="0.36807817" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49658704" weight="0.29098806" />
-      <window_info anchor="bottom" id="Terminal" order="5" weight="0.24538545" />
-      <window_info anchor="bottom" id="Run with VisualVM" order="6" />
-      <window_info anchor="bottom" id="Debug with VisualVM" order="7" />
-      <window_info anchor="bottom" id="Message" order="8" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" weight="0.17785527" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Spring" order="13" />
-      <window_info anchor="right" id="Maven Projects" order="0" sideWeight="0.8398268" weight="0.0072556552" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" sideWeight="0.48795182" visible="true" weight="0.1296" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32977816" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Bean Validation" order="6" weight="0.11476109" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Palette" order="8" />
-      <window_info anchor="right" id="Commander" order="9" weight="0.4" />
-      <window_info anchor="right" id="Event Log" order="10" sideWeight="0.5120482" side_tool="true" visible="true" weight="0.11331445" />
-      <window_info anchor="right" id="PlantUML" order="11" weight="0.3296" />
-      <window_info anchor="right" id="SciView" order="12" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -883,162 +956,222 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="111" />
-    <option name="LAST_COMMIT_MESSAGE" value="111" />
+    <MESSAGE value="忽略文件" />
+    <MESSAGE value="引入mogodb" />
+    <option name="LAST_COMMIT_MESSAGE" value="引入mogodb" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/concurrent/LinkedBlockingQueue.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/concurrent/ExecutorService.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/concurrent/RejectedExecutionHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/thread/pool/DiscardPolicyDemo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/RedisJunit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="324">
+          <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/concurrent/ThreadPoolExecutor.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/concurrent/Executors.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/heartbeat/HeartbeatEntity.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/HashMap.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/Map.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/lang/reflect/Proxy.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/heartbeat/Cmder.java">
+    <entry file="file://$PROJECT_DIR$/tmp2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/iolearn/TestIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+        <state relative-caret-position="170">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/heartbeat/HeartbeatClient.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/heartbeat/HeartbeatHandlerImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/heartbeat/HeartbeatLinstener.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/lang/Class.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/hdwindow/SlidingWindowCounterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-479">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/mogodbUtil/MogoDBMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3-sources.jar!/org/apache/http/impl/client/HttpClients.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="55" column="42" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
+          <folding>
+            <element signature="e#1887#1888#0" expanded="true" />
+            <element signature="e#1944#1945#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="118" column="19" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4-sources.jar!/org/apache/commons/logging/LogFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4785">
+          <caret line="347" column="32" selection-start-line="347" selection-start-column="32" selection-end-line="347" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-core/2.6/log4j-core-2.6-sources.jar!/org/apache/logging/log4j/core/config/ConfigurationFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="509" selection-start-line="509" selection-end-line="509" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/util/HttpClientUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2132#2133#0" expanded="true" />
+            <element signature="e#2171#2172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar!/org/apache/commons/logging/LogFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9405">
+          <caret line="654" selection-start-line="654" selection-end-line="654" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11280">
+          <caret line="803" column="16" selection-start-line="803" selection-start-column="16" selection-end-line="803" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/heartbeat/HeartbeatTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="21" column="95" selection-start-line="21" selection-start-column="95" selection-end-line="21" selection-end-column="95" />
+        <state relative-caret-position="90">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/heartbeat/ServiceCenter.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/heartbeat/RPCClient.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/TestJVM.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3-sources.jar!/org/apache/http/conn/ssl/DefaultHostnameVerifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="360">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zkDemo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thritfDemo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nettyDemo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="27" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/concurrent/ScheduledThreadPoolExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="429" column="8" selection-start-line="429" selection-start-column="8" selection-end-line="429" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="1196" column="11" selection-start-line="1196" selection-start-column="11" selection-end-line="1196" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/thread/pool/DiscardPolicyDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-166">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/thread/TestPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/thread/ThreadPoolExecutorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        <state relative-caret-position="105">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/heartbeat/HeartbeatHandler.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/concurrent/SynchronousQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="251">
+          <caret line="854" column="11" selection-start-line="854" selection-start-column="11" selection-end-line="854" selection-end-column="11" />
+          <folding>
+            <element signature="e#34990#34991#0" expanded="true" />
+            <element signature="e#35017#35018#0" expanded="true" />
+            <element signature="e#35291#35292#0" expanded="true" />
+            <element signature="e#35374#35375#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/BugTest.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/concurrent/Executors.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="236">
+          <caret line="214" column="34" selection-start-line="214" selection-start-column="34" selection-end-line="214" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/PkFlag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/bean/CategoryVo.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <caret line="236" column="27" selection-start-line="236" selection-start-column="27" selection-end-line="236" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/lang/Long.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/TestJava.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="500" column="28" selection-start-line="500" selection-start-column="28" selection-end-line="500" selection-end-column="28" />
+        <state relative-caret-position="235">
+          <caret line="148" column="22" lean-forward="true" selection-start-line="148" selection-start-column="22" selection-end-line="148" selection-end-column="22" />
           <folding>
-            <element signature="imports" />
+            <element signature="e#24331#24332#0" expanded="true" />
+            <element signature="e#24396#24397#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/moshidemo/guanchazhe/subject/Observer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/moshidemo/guanchazhe/subject/ObserverTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/moshidemo/guanchazhe/subject/SubjectEventType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/moshidemo/guanchazhe/subject/Subject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/moshidemo/guanchazhe/core/EventListener.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/util/Student.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/moshidemo/guanchazhe/daili/CglibProxy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/util/TestStudent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/moshidemo/guanchazhe/daili/TestDL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1049,31 +1182,118 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/TestJson.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/bean/MyMsg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-820">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="150">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.20/lombok-1.16.20-sources.jar!/lombok/Builder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-312">
+          <caret line="108" column="18" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.20/lombok-1.16.20-sources.jar!/lombok/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.20/lombok-1.16.20-sources.jar!/lombok/EqualsAndHashCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/bean/Content.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding>
+            <element signature="e#446#447#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/thread/pool/ExecutorsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/Date.java">
+    <entry file="file://$PROJECT_DIR$/demo.iml~origin_master">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/util/GMTDataUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-600">
-          <caret line="163" column="11" selection-start-line="163" selection-start-column="11" selection-end-line="163" selection-end-column="11" />
+        <state relative-caret-position="960">
+          <caret line="70" column="9" selection-start-line="67" selection-start-column="7" selection-end-line="70" selection-end-column="9" />
           <folding>
-            <element signature="e#6390#6391#0" expanded="true" />
-            <element signature="e#6438#6439#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/logback/LogbackDemo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/BugTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="100" selection-start-line="24" selection-start-column="100" selection-end-line="24" selection-end-column="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/TestHttp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/TestPolling.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/text/SimpleDateFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7530">
+          <caret line="554" column="11" selection-start-line="554" selection-start-column="11" selection-end-line="554" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/Calendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25245">
+          <caret line="1753" column="22" selection-start-line="1753" selection-start-column="22" selection-end-line="1753" selection-end-column="22" />
+          <folding>
+            <element signature="e#70577#70578#0" expanded="true" />
+            <element signature="e#70627#70628#0" expanded="true" />
+            <element signature="e#71057#71058#0" expanded="true" />
+            <element signature="e#71104#71105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/util/TimeUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1088,84 +1308,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/rt.jar!/sun/util/calendar/ZoneInfo.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/TestF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4050">
-          <caret line="301" column="36" selection-start-line="301" selection-start-column="36" selection-end-line="301" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/rt.jar!/sun/util/calendar/ZoneInfoFile.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="92" column="27" selection-start-line="92" selection-start-column="27" selection-end-line="92" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/text/DateFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5205">
-          <caret line="396" column="25" selection-start-line="396" selection-start-column="25" selection-end-line="396" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/text/SimpleDateFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5520">
-          <caret line="420" column="13" selection-start-line="420" selection-start-column="13" selection-end-line="420" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/Calendar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23430">
-          <caret line="1626" column="72" selection-start-line="1626" selection-start-column="72" selection-end-line="1626" selection-end-column="72" />
-          <folding>
-            <element signature="e#70577#70578#0" expanded="true" />
-            <element signature="e#70627#70628#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/Locale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33240">
-          <caret line="2312" column="8" selection-start-line="2312" selection-start-column="8" selection-end-line="2312" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/TestUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/TestTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="389" column="1" lean-forward="true" selection-start-line="389" selection-start-column="1" selection-end-line="389" selection-end-column="1" />
+        <state relative-caret-position="19">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="159" column="21" selection-start-line="159" selection-start-column="21" selection-end-line="159" selection-end-column="21" />
+        <state relative-caret-position="2085">
+          <caret line="139" column="31" selection-start-line="139" selection-start-column="28" selection-end-line="139" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/RedisJunit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/mogodbUtil/MogoDBMain.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/bean/CategoryVo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/jianting/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/jianting/ReadListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/TestJVM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1197,7 +1389,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring</last-edited>
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1209,7 +1401,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Python 2.7 (lz-live-activity) interpreter library</last-edited>
+          <last-edited>Bundled Protobuf Distribution</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

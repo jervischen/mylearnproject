@@ -1,8 +1,5 @@
 package com.example.demo.hdwindow;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 /**
  * Created in 2019-05-27 10:42.
  *

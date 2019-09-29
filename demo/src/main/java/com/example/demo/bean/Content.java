@@ -3,9 +3,6 @@ package com.example.demo.bean;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.ToString;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Created in 2018-02-06 10:41.

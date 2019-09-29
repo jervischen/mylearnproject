@@ -1,12 +1,9 @@
 package com.example.demo.linux;
 
+import com.jcraft.jsch.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import com.jcraft.jsch.*;
 
-import java.io.BufferedReader;
-import java.io.FileOutputStream;
-import java.io.InputStreamReader;
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
 import java.util.Properties;

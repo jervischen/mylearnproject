@@ -1,11 +1,6 @@
 package com.example.demo.util;
 
-import javax.crypto.BadPaddingException;
-import javax.crypto.Cipher;
-import javax.crypto.IllegalBlockSizeException;
-import javax.crypto.NoSuchPaddingException;
-import javax.crypto.SecretKey;
-import javax.crypto.SecretKeyFactory;
+import javax.crypto.*;
 import javax.crypto.spec.DESKeySpec;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;

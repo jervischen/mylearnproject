@@ -1,9 +1,9 @@
 package com.example.demo.util;
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Random;
 import java.util.TimeZone;
 
 /**
@@ -64,6 +64,11 @@ public class GMTDataUtil {
         System.out.println(getCurrentTimeStr(GMT0, DEFAULT_PATTERN));
         System.out.println(getCurrentTimeStr(GMT3, DEFAULT_PATTERN));
         System.out.println(getCurrentTimeStr(GMT8, DEFAULT_PATTERN));
+
+        Random random = new Random(1);
+        for (int i=0;i <5;i++){
+            System.out.println(random.nextInt(100));
+        }
     }
 
 }

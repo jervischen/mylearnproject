@@ -7,9 +7,6 @@ import com.jcraft.jsch.UserInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.FilterInputStream;
-import java.io.IOException;
-
 /**
  * Created in 2018-02-26 10:41.
  *

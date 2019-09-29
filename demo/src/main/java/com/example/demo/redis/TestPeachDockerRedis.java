@@ -2,12 +2,10 @@ package com.example.demo.redis;
 
 import com.example.demo.io.TestFile;
 import com.example.demo.util.DateUtil;
-import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import redis.clients.jedis.Jedis;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
