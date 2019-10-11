@@ -1,8 +1,8 @@
 package com.example.demo;
 
+import com.google.common.base.Joiner;
 import com.google.common.base.Splitter;
 
-import java.net.SocketTimeoutException;
 import java.util.List;
 
 /**
@@ -19,5 +19,9 @@ public class TestJVM {
         List<String> split1= Splitter.on(",").splitToList(str);
         System.out.println(split1.contains(String.valueOf(88)));
         System.out.println(split1);
+
+
+        String join = Joiner.on("_").join("a", "b");
+        System.out.println(join);
     }
 }
