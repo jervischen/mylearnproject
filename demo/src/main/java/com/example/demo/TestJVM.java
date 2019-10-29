@@ -23,5 +23,10 @@ public class TestJVM {
 
         String join = Joiner.on("_").join("a", "b");
         System.out.println(join);
+
+
+        Runnable runnable = () -> System.out.println(111);
+
+        runnable.run();
     }
 }

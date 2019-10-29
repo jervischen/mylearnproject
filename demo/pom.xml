@@ -6,11 +6,10 @@
     <groupId>com.example</groupId>
     <artifactId>demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-<!--    <modules>-->
-<!--        <module>thritfDemo</module>-->
-<!--        <module>zkDemo</module>-->
-<!--        <module>nettyDemo</module>-->
-<!--    </modules>-->
+    <modules>
+        <module>cx-zk-demo</module>
+        <module>cx-guice-learn</module>
+    </modules>
     <packaging>pom</packaging>
 
     <name>demo</name>
