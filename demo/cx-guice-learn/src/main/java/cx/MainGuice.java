@@ -1,8 +1,10 @@
 package cx;
 
 import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import com.google.inject.Injector;
 import com.netflix.governator.guice.LifecycleInjector;
+import cx.bean.ABean;
 import cx.manager.Bmanager;
 
 import java.util.ArrayList;
@@ -40,6 +42,36 @@ public class MainGuice {
 
         Optional<String> reduce = nameList.stream().reduce((a, b) -> a + b);
         System.out.println(reduce.get());
+
+
+        List<Object> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        System.out.println(list);
+
+
+        Map<String, ABean> map = Maps.newHashMap();
+        List<ABean> list1 = new ArrayList<>();
+
+        ABean aBean = new ABean();
+        aBean.setName("123");
+        aBean.setAddress("aaa");
+
+        map.put("a",aBean);
+        list1.add(aBean);
+
+        aBean = new ABean();
+        aBean.setName("bbb");
+        aBean.setAddress("ccc");
+
+        map.put("b",aBean);
+        list1.add(aBean);
+        System.out.println(map);
+        System.out.println(list1);
+
+
+
+
     }
 
     public void testSyntacticSugar(){

@@ -9,6 +9,7 @@
     <modules>
         <module>cx-zk-demo</module>
         <module>cx-guice-learn</module>
+        <module>my-baties-test</module>
     </modules>
     <packaging>pom</packaging>
 
