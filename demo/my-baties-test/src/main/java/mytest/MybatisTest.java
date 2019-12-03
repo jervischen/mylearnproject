@@ -2,15 +2,16 @@ package mytest;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
-import jdk.nashorn.internal.ir.debug.ObjectSizeCalculator;
-import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import com.ibatis.common.resources.Resources;
+import com.ibatis.sqlmap.client.SqlMapClient;
+import com.ibatis.sqlmap.client.SqlMapClientBuilder;
+import com.ibatis.sqlmap.client.SqlMapSession;
 import org.junit.Test;
 import pojo.User;
 
+import java.io.IOException;
 import java.io.InputStream;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -22,32 +23,36 @@ import java.util.Map;
  */
 public class MybatisTest {
     public static void main(String[] args) throws Exception {
-        // 指定全局配置文件
+//        // 指定全局配置文件
+//        String resource = "mybatis-config.xml";
+//        // 读取配置文件
+//        InputStream inputStream = Resources.getResourceAsStream(resource);
+//        // 构建sqlSessionFactory
+//        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+//        // 获取sqlSession
+//        SqlSession sqlSession = sqlSessionFactory.openSession();
+//        try {
+//            // 操作CRUD，第一个参数：指定statement，规则：命名空间+“.”+statementId
+//            // 第二个参数：指定传入sql的参数：这里是用户id
+//            User user = sqlSession.selectOne("MyMapper.selectUser", 1);
+//            System.out.println(user);
+//        } finally {
+//            sqlSession.close();
+//        }
+
+    }
+
+    @Test
+    public void testM() throws Exception {
         String resource = "mybatis-config.xml";
-        // 读取配置文件
         InputStream inputStream = Resources.getResourceAsStream(resource);
-        // 构建sqlSessionFactory
-        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-        // 获取sqlSession
-        SqlSession sqlSession = sqlSessionFactory.openSession();
-        try {
-            // 操作CRUD，第一个参数：指定statement，规则：命名空间+“.”+statementId
-            // 第二个参数：指定传入sql的参数：这里是用户id
-            User user = sqlSession.selectOne("MyMapper.selectUser", 1);
-            System.out.println(user);
-        } finally {
-            sqlSession.close();
-        }
+        SqlMapClient sqlMapClient = SqlMapClientBuilder.buildSqlMapClient(inputStream);
 
-        System.out.println("Integer: " + ObjectSizeCalculator.getObjectSize(Integer.valueOf(1)));
-        System.out.println("Long: " + ObjectSizeCalculator.getObjectSize(Long.valueOf(1L)));
+        SqlMapSession sqlMapSession = sqlMapClient.openSession();
 
+        List list = sqlMapSession.queryForList("selectUser", 1);
+        System.out.println(list);
 
-        String a = "名";
-        System.out.println("UTF-8编码长度:"+a.getBytes("UTF-8").length);
-        System.out.println("GBK编码长度:"+a.getBytes("GBK").length);
-        System.out.println("GB2312编码长度:"+a.getBytes("GB2312").length);
-        System.out.println("==========================================");
     }
 
     @Test

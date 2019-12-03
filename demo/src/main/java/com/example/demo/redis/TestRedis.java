@@ -32,15 +32,15 @@ public class TestRedis {
     }
 
     public static void delRedis() {
-        String key = "LZ_ENTERNOTICE_ENTER_NOTICES_*";
+        String key = "LZ_GIFT_GIFT_WALL_MAP_*";
 
         ScanParams scanParams = new ScanParams();
         scanParams.match(key);
-        scanParams.count(50000);
+        scanParams.count(500000);
         ScanResult<String> scan = jedis.scan(0, scanParams);
         for (String s : scan.getResult()) {
             System.out.println(s);
-//           jedis.del(s);
+           jedis.del(s);
         }
         jedis.close();
     }
