@@ -31,6 +31,6 @@ public class Message implements Delayed {
     // 延迟任务是否到时就是按照这个方法判断如果返回的是负数则说明到期否则还没到期
     @Override
     public long getDelay(TimeUnit unit) {
-        return unit.convert(this.excuteTime - System.nanoTime(), TimeUnit.NANOSECONDS);
+        return unit.convert(this.excuteTime - System.currentTimeMillis(), TimeUnit.MILLISECONDS);
     }
 }

@@ -5,8 +5,7 @@ import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -115,10 +114,15 @@ public class TestLoadingCache {
 
     public static void main(String[] args) {
         // testCacheBreakdown();
-        testCacheBlock();
+//        testCacheBlock();
+//
+//        ReentrantLock lock = new ReentrantLock();
+//        lock.lock();
 
-        ReentrantLock lock = new ReentrantLock();
-        lock.lock();
+        Set<String> set = new HashSet<>();
+        set.add("1");
+
+        System.out.println(set.contains(String.valueOf(1)));
     }
 
 }

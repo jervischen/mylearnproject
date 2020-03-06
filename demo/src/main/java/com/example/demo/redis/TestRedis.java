@@ -1,11 +1,15 @@
 package com.example.demo.redis;
 
+import com.example.demo.bean.Menu;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.ScanParams;
 import redis.clients.jedis.ScanResult;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created in 2018-01-08 18:36.
@@ -32,12 +36,12 @@ public class TestRedis {
     }
 
     public static void delRedis() {
-        String key = "LZ_GIFT_GIFT_WALL_MAP_*";
+        String key = "SC_ACT_WAKA_*";
 
         ScanParams scanParams = new ScanParams();
         scanParams.match(key);
-        scanParams.count(500000);
-        ScanResult<String> scan = jedis.scan(0, scanParams);
+        scanParams.count(20000000);
+        ScanResult<String> scan = jedis.scan(1000000, scanParams);
         for (String s : scan.getResult()) {
             System.out.println(s);
            jedis.del(s);
@@ -48,9 +52,30 @@ public class TestRedis {
     @Test
     public void a() {
 
-        Double a = null;
-        if(a > 1){
-            System.out.println(55);
+        List<String> info = jedis.hmget("SC_ACT_WAKA_GAME_INFO", "5096622024198328447");
+        System.out.println(info);
+    }
+
+    @Test
+    public void b(){
+
+        List<String> list = new ArrayList<>();
+        list.add("a");
+        list.add("b");
+
+
+        boolean flag = true;
+        int i = 1;
+        while (flag){
+            System.out.println(list.size());
+            if (list.size() == 1){
+                flag =false;
+            }
+            list.remove("a");
         }
+
+        Menu menu = new Menu();
+        menu.getContent().setText("abc");
+        System.out.println(menu);
     }
 }

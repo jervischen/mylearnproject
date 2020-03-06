@@ -10,8 +10,8 @@ import lombok.Data;
  * @author chenxiao
  */
 @Data
-@Builder
-@AllArgsConstructor
+//@Builder
+//@AllArgsConstructor
 public class Content {
     /**
      * 红包id
@@ -21,8 +21,4 @@ public class Content {
    // private long belongId;
 
     private String text;
-
-    public String getText() {
-        return "aaa";
-    }
 }

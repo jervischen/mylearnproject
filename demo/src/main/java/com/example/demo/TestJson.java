@@ -1,17 +1,17 @@
 package com.example.demo;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.example.demo.bean.CategoryVo;
-import com.example.demo.bean.Content;
-import com.example.demo.bean.MyData;
-import com.example.demo.bean.MyMsg;
+import com.example.demo.bean.*;
 import com.example.demo.util.DateUtil;
 import com.google.common.base.Charsets;
+import com.google.common.base.Strings;
 import com.google.common.hash.Hashing;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.reporters.JUnitReportReporter;
 
 import java.util.*;
 import java.util.concurrent.TimeUnit;
@@ -36,6 +36,39 @@ public class TestJson {
 
         System.out.println(new MyData().isFull());
 
+    }
+
+    @Test
+    public void testJsonArray(){
+        String json = "[{\"type\": 1,\"open\": },{\"type\": 0,\"open\": 0}]";
+        JSONArray array = JSONArray.parseArray(json);
+        System.out.println(array);
+
+        JSONArray array1 = JSONObject.parseArray(json);
+        System.out.println(array1);
+        for (Object o : array1) {
+            Map map = (Map)o;
+            System.out.println(map.get("type"));
+        }
+
+        System.out.println("".contains("123"));
+
+        List<Menu> menuList = JSONArray.parseArray("[]", Menu.class);
+        System.out.println(menuList);
+        for (Menu menu : menuList) {
+            System.out.println(menu);
+        }
+
+
+    }
+
+    @Test
+    public void a(){
+        String st = "1       a b c d  ";
+        System.out.println(st);
+        System.out.println(st.trim());
+        System.out.println(st.trim().replace(" ",""));
+        System.out.println(st.trim().replaceAll("\\s*",""));
     }
 
     @Test
