@@ -45,4 +45,12 @@ public class TestF {
         System.out.println(menu.getList());
         System.out.println(list1);
     }
+
+    @Test
+    public void a(){
+        long userId = 5077819358388954668L;
+        String hexString = Long.toHexString(5077819358388954668L);
+        System.out.println(hexString);
+        System.out.println(Long.valueOf(hexString,16));
+    }
 }
