@@ -36,6 +36,9 @@ public class TestJson {
 
         System.out.println(new MyData().isFull());
 
+        String ss = "{name}abc";
+        System.out.println(ss.replace("{name}","99"));
+
     }
 
     @Test
@@ -175,6 +178,9 @@ public class TestJson {
     public static void main(String[] args) {
         System.out.println(TimeUnit.DAYS.toSeconds(1));
         System.out.println(TimeUnit.DAYS.toSeconds(10));
+        String name = null;
+
+        System.out.println("a"+ "_" + name);
     }
 
 }

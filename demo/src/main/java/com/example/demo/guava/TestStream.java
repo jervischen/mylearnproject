@@ -1,5 +1,7 @@
 package com.example.demo.guava;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.google.common.base.Joiner;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Collections2;
@@ -100,6 +102,12 @@ public class TestStream {
 
 
         System.out.println(5/2);
+
+        ObjectMapper mapper = new ObjectMapper();
+        ObjectNode contentObjectNode = mapper.createObjectNode()
+                .put("id", 1111).put("text", "aa");
+        String content = contentObjectNode.toString();
+        System.out.println(content);
     }
 
 
