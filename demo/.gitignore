@@ -18,4 +18,5 @@ target
 build
 out
 /.idea/workspace.xml
+.mvn
 /demo.iml~origin_master

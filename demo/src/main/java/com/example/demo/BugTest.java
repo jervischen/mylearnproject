@@ -1,13 +1,17 @@
 package com.example.demo;
 
 
+import com.beust.jcommander.internal.Lists;
 import com.google.common.base.Charsets;
 import com.google.common.hash.Hashing;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.collections.Sets;
 
+import java.util.List;
 import java.util.Random;
+import java.util.Set;
 
 /**
  * Created in 2018-06-26 10:53.
@@ -30,5 +34,13 @@ public class BugTest {
         for (int i=0;i <5;i++){
             System.out.println(random.nextInt(100));
         }
+
+        Set<Long> list = Sets.newHashSet();
+        list.add(1239L);
+        list.add(null);
+        list.add(null);
+        System.out.println(list);
+        list.remove(null);
+        System.out.println(list);
     }
 }

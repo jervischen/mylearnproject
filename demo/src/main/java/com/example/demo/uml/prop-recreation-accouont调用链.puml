@@ -1,0 +1,32 @@
+@startmindmap
+* 项目
+** app_live_prop
+*** lz_live_prop
+**** lz_payment
+**** lz_live_medal
+**** lz_pp_play_game
+**** lz_live_amusement
+**** lz_live_guard
+**** lz_common_usercenter
+**** lz_live_gift
+**** lz_pp_account
+**** lz_vod_business
+**** lz_live_room
+*** lz_live_gift
+*** lz_pp_account
+*** lz_live_room
+** app_account
+*** app_online
+*** lz_sms
+*** lz_datacenter_chat_online
+*** lz_common_usercenter
+*** lz_account_security
+**** lz_common_risk_account_list
+**** lz_push_appproxy_online
+**** lz_sms
+**** lz_voice
+**** lz_account_punish
+**** lz_common_commservice
+**** lz_common_risk_strategy
+*** lz_fixed_rcmd
+@endmindmap
