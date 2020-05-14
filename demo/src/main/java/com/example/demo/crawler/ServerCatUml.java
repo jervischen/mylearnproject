@@ -1,9 +1,10 @@
 package com.example.demo.crawler;
 
 import com.alibaba.fastjson.JSONObject;
-import com.beust.jcommander.internal.Lists;
 import com.example.demo.excel.ReadExcelUtil;
 import com.example.demo.util.HttpClientUtil;
+import com.google.common.collect.Lists;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -16,7 +17,7 @@ import java.util.Set;
  */
 public class ServerCatUml {
 
-    static List<String> projecdNameList = ReadExcelUtil.readExcel(0);
+    static List<String> projecdNameList = ReadExcelUtil.readExcel(2);
 //    static List<String> projecdNameList = new ArrayList<>();
 
     static Set<String> dependAllProjectList = new HashSet<>();
@@ -25,14 +26,35 @@ public class ServerCatUml {
     static List<String> includeProjectList = ReadExcelUtil.readExcel(2);
     static List<String> printProjextList = Lists.newArrayList();
 
+    static int forIndex = 1;
+
 //    static String prefix = "";
 
+    @Test
+    public void get(){
+        List<String> all = ReadExcelUtil.readExcel(3);
+        List<String> comfir = ReadExcelUtil.readExcel(4);
+        for (String one : all) {
+            if (!comfir.contains(one.trim())) {
+                System.out.println(one);
+            }
+        }
+    }
+
     public static void main(String[] args) {
-        projecdNameList.clear();
-        excludePro();
-        projecdNameList.add("lz_live_amusement");
+
         excludeProjectList.clear();
-        allProject(projecdNameList,4);
+        projecdNameList.clear();
+        projecdNameList.add("lz_live_oss_online");
+        projecdNameList.add("lz_live_oss_online");
+        projecdNameList.add("lz_live_oss_online");
+        projecdNameList.add("lz_live_oss_online");
+        for (String s : projecdNameList) {
+            List<String> list = Lists.newArrayList();
+            list.add(s);
+            System.out.println("=======================");
+            allProject(list,1);
+        }
 //        System.out.println("所有项目：" + dependAllProjectList);
     }
 
@@ -85,6 +107,7 @@ public class ServerCatUml {
         excludeProjectList.add("lz_live_wolf");
         excludeProjectList.add("lz_datacenter_chat_online");
         excludeProjectList.add("lz_vod_business");
+        excludeProjectList.clear();
     }
 
     public static void allProject(List<String> projecdNameList,int count) {
@@ -92,7 +115,8 @@ public class ServerCatUml {
         for (int i=0;i< count;i++){
             prefix += "*";
         }
-        if (count > 10){
+        if (count >3){
+            --forIndex;
             return;
         }
 //        System.out.println(count);
@@ -104,6 +128,7 @@ public class ServerCatUml {
 //        System.out.println("需要移除的：" + excludeProjectList);
 //        System.out.println("移除后：" + projecdNameList);
         for (String project : projecdNameList) {
+            ++forIndex;
             excludeProjectList.add(project);
 //            if (!includeProjectList.contains(project)){
 //                continue;
@@ -123,27 +148,27 @@ public class ServerCatUml {
             JSONObject callProjectsInfo = jsonObject.getJSONObject("callProjectsInfo");
             callProjectList = callProjectsInfo.keySet();
             callProjectList.remove("AllServers");
-            callProjectList.remove("data_center_proxy");
-
-            if (!printProjextList.contains(project)){
+//            callProjectList.remove("data_center_proxy");
+//
+//            if (!printProjextList.contains(project)){
+//                System.out.println(prefix + " " + project);
+//                printProjextList.add(project);
+//            }
                 System.out.println(prefix + " " + project);
-                printProjextList.add(project);
-            }
 //            System.out.println("项目名：" + project + " 调用了" + callProjectList);
             if (!callProjectList.isEmpty()) {
                 dependAllProjectList.addAll(callProjectList);
-//                allProject(new ArrayList<>(callProjectList),++count);
-
                 for (String pro : callProjectsInfo.keySet()) {
-//                    if (!excludeProjectList.contains(pro)){
-//                    }
-                    System.out.println(prefix + "* " + pro);
+                    ArrayList<String> list = new ArrayList<>();
+                    list.add(pro);
+                    if (forIndex > 3){
+                        break;
+                    }
+                    allProject(list,forIndex);
                 }
             }
-
-
         }
-
+        --forIndex;
 //        System.out.println("所有项目：");
 //        System.out.println(dependAllProjectList);
     }

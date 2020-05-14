@@ -53,4 +53,14 @@ public class TestF {
         System.out.println(hexString);
         System.out.println(Long.valueOf(hexString,16));
     }
+
+    @Test
+    public void b(){
+        long time = System.currentTimeMillis();
+        System.out.println(time);
+
+        System.out.println(Long.MAX_VALUE);
+        Long a = 2L << 41;
+        System.out.println(a);
+    }
 }
