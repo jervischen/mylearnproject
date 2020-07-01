@@ -1,5 +1,6 @@
 package com.example.demo.bean;
 
+import com.alibaba.fastjson.JSONObject;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -21,4 +22,14 @@ public class Content {
    // private long belongId;
 
     private String text;
+
+
+    public static void main(String[] args) {
+       try {
+           System.out.println(11);
+           return;
+       }finally {
+           System.out.println(333);
+       }
+    }
 }

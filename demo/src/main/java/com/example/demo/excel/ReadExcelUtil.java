@@ -30,6 +30,11 @@ public class ReadExcelUtil {
     public static List<String> readExcel(int sheetNum) {
         List<String> list = new ArrayList<>();
         String filePath = "/Users/chenxiao/IdeaProjects/mylearnproject/demo/src/main/java/com/example/demo/excel/pp.xlsx";
+        return readExcel(sheetNum,filePath);
+    }
+
+    public static List<String> readExcel(int sheetNum,String filePath) {
+        List<String> list = new ArrayList<>();
         Workbook wb = readExcel(filePath);
         if (wb != null) {
             //获取第一个sheet
@@ -91,7 +96,8 @@ public class ReadExcelUtil {
                     break;
                 }
                 case Cell.CELL_TYPE_STRING: {
-                    cellValue = cell.getRichStringCellValue().getString();
+                    cell.setCellType(Cell.CELL_TYPE_STRING);
+                    cellValue = cell.getRichStringCellValue().getString().trim();
                     break;
                 }
                 default:

@@ -43,4 +43,10 @@ public class BugTest {
         list.remove(null);
         System.out.println(list);
     }
+
+    @Test
+    public void tes(){
+        String a  =" a b c ";
+        System.out.println(a.trim());
+    }
 }

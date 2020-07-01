@@ -133,7 +133,7 @@ public class ServerCatUml {
 //            if (!includeProjectList.contains(project)){
 //                continue;
 //            }
-            String url = "http://ymcat_monitor_web.lizhi.fm/cat/r/cross?op=api&domain=%s&ip=All&date=20200406&reportType=week";
+            String url = "";
             project = project.replace("-", "_").trim();
             url = String.format(url, project);
 
