@@ -18,7 +18,7 @@ public class CatFilter {
 
         Set<String> allService = getAllService("app_live_recreation");
         for (String service : allService) {
-            String url = "http://ymcat_monitor_web.lizhi.fm/cat/r/t?domain=%s&type=RpcCall&date=2020041511&queryname=%s&ip=All";
+            String url = "";
             url = String.format(url, service, queryName);
             String result = HttpClientUtil.doGet(url);
             JSONObject jsonObject = JSONObject.parseObject(result);
@@ -30,7 +30,7 @@ public class CatFilter {
 
 
     public static Set<String> getAllService(String projuectName) {
-        String url = "http://ymcat_monitor_web.lizhi.fm/cat/r/cross?op=api&domain=%s&ip=All&date=20200406&reportType=week";
+        String url = "";
         projuectName = projuectName.replace("-", "_").trim();
         url = String.format(url, projuectName);
 
