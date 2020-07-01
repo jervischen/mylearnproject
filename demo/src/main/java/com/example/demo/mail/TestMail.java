@@ -31,10 +31,10 @@ public class TestMail {
         // 2. From: 发件人
         //    其中 InternetAddress 的三个参数分别为: 邮箱, 显示的昵称(只用于显示, 没有特别的要求), 昵称的字符集编码
         //    真正要发送时, 邮箱必须是真实有效的邮箱。
-        message.setFrom(new InternetAddress("837150034@qq.com", "USER_AA", "UTF-8"));
+        message.setFrom(new InternetAddress("", "USER_AA", "UTF-8"));
 
         // 3. To: 收件人
-        message.setRecipient(MimeMessage.RecipientType.TO, new InternetAddress("chenxiao@lizhi.fm", "USER_CC", "UTF-8"));
+        message.setRecipient(MimeMessage.RecipientType.TO, new InternetAddress("", "USER_CC", "UTF-8"));
 //        //    To: 增加收件人（可选）
 //        message.addRecipient(MimeMessage.RecipientType.TO, new InternetAddress("dd@receive.com", "USER_DD", "UTF-8"));
 //        //    Cc: 抄送（可选）

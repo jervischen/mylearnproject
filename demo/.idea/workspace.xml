@@ -1,41 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7537d92f-1cf4-4de7-8fa6-65423ee6eaa8" name="Default" comment="plant uml">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/excel/projectname/BankCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/excel/projectname/ProjectNameT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/excel/projectname/RegionCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/excel/projectname/SignResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/excel/projectname/name.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/family/ppfamily.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/family/家族导入模板.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/family/旧合同同步数据.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/lizhi/TestConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/lizhi/UtilsConf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/uml/ppsigne/业务和签约skd交互.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/uml/业务与SDK交互.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/uml/家族签约与实名认证.puml" afterDir="false" />
+    <list default="true" id="7537d92f-1cf4-4de7-8fa6-65423ee6eaa8" name="Default" comment="删除铭感信息">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/BugTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/BugTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/bean/Content.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/bean/Content.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/crawler/ServerCatUml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/crawler/ServerCatUml.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/excel/ReadExcelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/excel/ReadExcelUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/linux/DockerCheckAlive.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/linux/DockerCheckLog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/linux/OnlineCheckLog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/linux/SSHExecutor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/linux/Shell.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/linux/TestKeyAcc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/linux/TestSSHExecutor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/mail/SendMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/mail/SendMail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/uml/审核流程.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/uml/审核流程.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chenxiao.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dockerlog.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dockerserver.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/onlineserver.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/server.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/testserver.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/TestHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/TestHttp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/TestJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/TestJava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/TestTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/crawler/ServerCat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/crawler/ServerCat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/family/ppfamily.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/family/ppfamily.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/lizhibean/LizhiTestJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/lbean/LTestJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/lizhibean/pk/NextPkInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/lbean/pk/NextPkInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/lizhibean/pk/PkInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/lbean/pk/PkInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/mail/TestMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/mail/TestMail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/util/HttpClientUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/util/HttpClientUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/util/LizhiLogger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/util/TimeUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lizhi/TestConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lizhi/UtilsConf.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/thritfDemo/target/" />
@@ -72,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/family/ppfamily.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+            <state relative-caret-position="210">
+              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,15 +63,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/TestJava.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+            <state relative-caret-position="94">
+              <caret line="239" column="12" lean-forward="true" selection-start-line="239" selection-start-column="12" selection-end-line="239" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -104,42 +80,47 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/crawler/ServerCatUml.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="131" column="44" lean-forward="true" selection-start-line="131" selection-start-column="44" selection-end-line="131" selection-end-column="44" />
+            <state relative-caret-position="205">
+              <caret line="128" column="33" selection-start-line="128" selection-start-column="33" selection-end-line="128" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/family/旧合同同步数据.puml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/crawler/CatFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            <state relative-caret-position="90">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/util/HttpClientUtil.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/crawler/ServerCat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="96" column="17" lean-forward="true" selection-start-line="96" selection-start-column="17" selection-end-line="96" selection-end-column="17" />
-              <folding>
-                <element signature="e#3847#3848#0" expanded="true" />
-                <element signature="e#3887#3888#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="147">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.8/httpcore-4.4.8.jar!/org/apache/http/util/EntityUtils.class">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/lbean/LTestJson.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="181" column="25" selection-start-line="181" selection-start-column="25" selection-end-line="181" selection-end-column="25" />
+            <state relative-caret-position="150">
+              <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/lbean/pk/PkInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -147,20 +128,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/TestHttp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+            <state relative-caret-position="240">
+              <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/excel/projectname/ProjectNameT.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/mail/TestMail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-64">
-              <caret line="59" column="55" lean-forward="true" selection-start-line="59" selection-start-column="55" selection-end-line="59" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="157">
+              <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -182,10 +160,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>lz_live_amusementl</find>
-      <find>lz_live_gift</find>
-      <find>cover</find>
-      <find>lz_live_</find>
       <find>prefix</find>
       <find>lz_pp_</find>
       <find>lz_pp_count</find>
@@ -212,6 +186,10 @@
       <find>fas</find>
       <find>开发人员</find>
       <find>url</find>
+      <find>lizhi</find>
+      <find>137</find>
+      <find>13798959615</find>
+      <find>8371</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -239,13 +217,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/uml/lz_live_broadcast调用链.puml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/uml/lz_live_operating_task调用链.puml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/uml/lz_live_prop调用链.puml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/uml/lz_live_data调用链.puml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/uml/lz_live_call调用链.puml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/uml/lz_live_gifteffect调用链.puml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/uml/lz_live_room调用链.puml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/uml/lz_live_enternotice调用链.puml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/uml/lz_live_operating_activities调用链.puml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/uml/lz_live_popularity调用链.puml" />
@@ -258,10 +229,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/uml/lz_live_activity调用链.puml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/uml/app-live-trade调用链.puml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/TestF.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/crawler/CatFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/crawler/ServerConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/crawler/ConfigProperties.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/mail/TestMail.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/uml/推荐服务.puml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/uml/推荐服务.puml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/uml/审核流程.puml" />
@@ -284,12 +253,21 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/uml/家族签约与实名认证.puml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/ppfamily.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/family/旧合同同步数据.puml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/family/ppfamily.java" />
         <option value="$PROJECT_DIR$/src/main/resources/server.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/dockerlog.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/onlineserver.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/mail/SendMail.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/crawler/ServerCatUml.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/crawler/CatFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/crawler/ServerCat.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/family/ppfamily.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/TestJava.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/TestTime.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/lbean/LizhiTestJson.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/lbean/LTestJson.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/TestHttp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/util/HttpClientUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/mail/TestMail.java" />
       </list>
     </option>
   </component>
@@ -392,16 +370,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="example" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -998,7 +966,7 @@
       <workItem from="1591787322200" duration="3568000" />
       <workItem from="1592188887481" duration="10544000" />
       <workItem from="1592549416898" duration="2685000" />
-      <workItem from="1593397731271" duration="14415000" />
+      <workItem from="1593397731271" duration="15363000" />
     </task>
     <task id="LOCAL-00001" summary="111">
       <created>1558858638100</created>
@@ -1154,7 +1122,21 @@
       <option name="project" value="LOCAL" />
       <updated>1589427540094</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="删除敏感信息">
+      <created>1593572450939</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1593572450939</updated>
+    </task>
+    <task id="LOCAL-00024" summary="删除铭感信息">
+      <created>1593572495348</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1593572495348</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1190,7 +1172,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="943070000" />
+    <option name="totallyTimeSpent" value="944018000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1214,7 +1196,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info id="Alibaba Cloud Explorer" order="8" weight="0.329591" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.21418235" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.5166426" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32706222" />
       <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.48762798" weight="0.32706222" />
       <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49829352" weight="0.3299566" />
@@ -1230,7 +1212,7 @@
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Alibaba Cloud View" order="15" weight="0.3487699" />
-      <window_info anchor="bottom" id="Terminal" order="16" weight="0.16787265" />
+      <window_info anchor="bottom" id="Terminal" order="16" visible="true" weight="0.24746744" />
       <window_info anchor="bottom" id="Thumbnails" order="17" weight="0.32936507" />
       <window_info anchor="right" id="Maven Projects" order="0" sideWeight="0.8398268" weight="0.0072556552" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24979919" />
@@ -1360,7 +1342,9 @@
     <MESSAGE value="plant uml" />
     <MESSAGE value="提交项目" />
     <MESSAGE value="提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交" />
+    <MESSAGE value="删除敏感信息" />
+    <MESSAGE value="删除铭感信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除铭感信息" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1457,45 +1441,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/uml/解约.puml" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.15/poi-ooxml-3.15-sources.jar!/org/apache/poi/xssf/usermodel/XSSFWorkbook.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/uml/解约.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/uml/推荐服务.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/bean/CityCode.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/pojo/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.20/lombok-1.16.20-sources.jar!/lombok/Data.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/bean/MyData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/bean/CategoryVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/bean/MyMsg.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1561,13 +1506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/lizhi/TestConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1695,13 +1633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/TestHttp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/excel/projectname/ProjectNameT.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-64">
@@ -1744,16 +1675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/family/ppfamily.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/chenxiao.pem">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1792,8 +1713,95 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/crawler/ServerCatUml.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="131" column="44" lean-forward="true" selection-start-line="131" selection-start-column="44" selection-end-line="131" selection-end-column="44" />
+        <state relative-caret-position="205">
+          <caret line="128" column="33" selection-start-line="128" selection-start-column="33" selection-end-line="128" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/crawler/CatFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/lizhi/TestConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/util/TimeUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/TestJava.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="239" column="12" lean-forward="true" selection-start-line="239" selection-start-column="12" selection-end-line="239" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/family/ppfamily.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/TestTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="261" column="27" selection-start-line="261" selection-start-column="27" selection-end-line="261" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/util/LizhiLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/crawler/ServerCat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/lbean/LTestJson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/lbean/pk/PkInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/TestHttp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/mail/TestMail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
         </state>
       </provider>
     </entry>

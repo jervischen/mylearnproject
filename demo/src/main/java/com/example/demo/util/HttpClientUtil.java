@@ -170,7 +170,7 @@ public class HttpClientUtil {
     public static void main(String[] args) {
 	/*	String url = "https://api.netease.im/sms/sendcode.action";
 		Map<String, String> param = new HashMap<String, String>();
-		param.put("mobile", "13798959615");
+		param.put("mobile", "");
 		param.put("codeLen", "4");
 		param.put("AppKey", "go9dnk49bkd9jd9vmel1kglw0803mgq3");
 		param.put("CheckSum", "9e9db3b6c9abb2e1962cf3e6f7316fcc55583f86");

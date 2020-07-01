@@ -1,4 +1,4 @@
-package com.example.demo.lizhibean.pk;
+package com.example.demo.lbean.pk;
 
 import lombok.Data;
 

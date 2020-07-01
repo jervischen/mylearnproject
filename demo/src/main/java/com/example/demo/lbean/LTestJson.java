@@ -1,8 +1,8 @@
-package com.example.demo.lizhibean;
+package com.example.demo.lbean;
 
 import com.alibaba.fastjson.JSONObject;
-import com.example.demo.lizhibean.pk.NextPkInfo;
-import com.example.demo.lizhibean.pk.PkInfo;
+import com.example.demo.lbean.pk.NextPkInfo;
+import com.example.demo.lbean.pk.PkInfo;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,8 +17,8 @@ import java.util.Map;
  *
  * @author chenxiao
  */
-public class LizhiTestJson {
-    private static Logger logger = LoggerFactory.getLogger(LizhiTestJson.class);
+public class LTestJson {
+    private static Logger logger = LoggerFactory.getLogger(LTestJson.class);
 
     @Test
     public void testNextPk(){

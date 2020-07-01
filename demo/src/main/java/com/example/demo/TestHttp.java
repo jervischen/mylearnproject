@@ -35,7 +35,7 @@ public class TestHttp {
         param.put("account", "I7256627");
         param.put("password", "i73ONfDlcnfdf1");
         param.put("msg", "您的验证码是1234");
-        param.put("mobile", "8613798959615");
+        param.put("mobile", "");
         HttpClientUtil.doPostJson(url, param);
     }
 

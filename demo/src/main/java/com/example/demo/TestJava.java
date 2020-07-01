@@ -245,7 +245,7 @@ public class TestJava {
 
     @Test
     public void testStringSplit() {
-        String s = "lizhi_red_envelope";
+        String s = "";
         System.out.println(s.substring(0, 14));
 
         System.out.println(s.replace("ddd", "aaaaa"));

@@ -38,7 +38,7 @@ public class ppfamily {
             Map<String, Object> param = new HashMap<>();
             param.put("userId",njId);
             param.put("familyName",familyName);
-            String result = HttpClientUtil.doPost("http://ppfamily.yfxn.lizhi.fm/api/family/autoCreateFamily", param);
+            String result = HttpClientUtil.doPost("", param);
             System.out.println(result);
         }
     }
