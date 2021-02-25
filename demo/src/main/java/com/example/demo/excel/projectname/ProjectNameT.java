@@ -46,8 +46,7 @@ public class ProjectNameT {
             regionCode.setProvinceCode(String.valueOf(row.getCell(3)));
             regionCode.setProvinceName(String.valueOf(row.getCell(4)));
 
-
-            for (int j = i + 1; j < rownum; j++) {
+            for (int j = i; j < rownum; j++) {
                 Row row1 = sheet.getRow(j);
                 if (regionCode.getProvinceCode().equals(String.valueOf(row1.getCell(3)))) {
                     RegionCode.Area area = new RegionCode.Area();
@@ -80,8 +79,8 @@ public class ProjectNameT {
             Row row = sheet.getRow(i);
 
             BankCode bankCode = new BankCode();
-            bankCode.setBankCode(String.valueOf(row.getCell(0)));
-            bankCode.setBankName(String.valueOf(row.getCell(1)));
+            bankCode.setBankCode(ReadExcelUtil.getCellFormatValue(row.getCell(0)));
+            bankCode.setBankName(row.getCell(1).getStringCellValue());
 
             regionCodeList.add(bankCode);
         }

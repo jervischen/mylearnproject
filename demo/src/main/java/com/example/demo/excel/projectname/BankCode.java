@@ -9,7 +9,7 @@ import lombok.Data;
 @Data
 public class BankCode {
 
-    private String bankCode;
+    private Object bankCode;
 
     private String bankName;
 }

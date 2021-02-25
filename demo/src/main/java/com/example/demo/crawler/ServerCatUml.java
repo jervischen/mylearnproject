@@ -173,5 +173,14 @@ public class ServerCatUml {
 //        System.out.println(dependAllProjectList);
     }
 
+    @Test
+    public void b(){
+        List<String> contractIds = Lists.newArrayListWithCapacity(0);
+        System.out.println(contractIds);
+
+        Long a = 123L;
+        long b = 123;
+        System.out.println(a==b);
+    }
 
 }

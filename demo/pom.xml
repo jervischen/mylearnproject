@@ -211,6 +211,11 @@
             <artifactId>libthrift</artifactId>
             <version>0.13.0</version>
         </dependency>
+        <dependency>
+            <groupId>fm.lizhi.live</groupId>
+            <artifactId>lz-pp-amusement-task-api</artifactId>
+            <version>3.0.6-SNAPSHOT</version>
+        </dependency>
 
         <dependency>
             <groupId>javax.mail</groupId>
@@ -219,31 +224,31 @@
         </dependency>
 
         <dependency>
-            <groupId>fm.lizhi.commons</groupId>
-            <artifactId>lz-commons-config</artifactId>
-            <version>2.3.5-SNAPSHOT</version>
-            <scope>provided</scope>
+            <groupId>org.modelmapper</groupId>
+            <artifactId>modelmapper</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>fm.lizhi</groupId>
+            <artifactId>lz-common-trade-query-center-api</artifactId>
+            <version>1.0.4</version>
         </dependency>
         <dependency>
-            <groupId>fm.lizhi.commons</groupId>
-            <artifactId>lz-commons-serviceclient</artifactId>
-            <version>1.2.0.5-SNAPSHOT</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-log4j12</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>log4j</groupId>
-                    <artifactId>log4j</artifactId>
-                </exclusion>
-            </exclusions>
-            <scope>provided</scope>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
+            <version>2.2.2</version>
         </dependency>
         <dependency>
-            <groupId>fm.lizhi.app</groupId>
-            <artifactId>lz-app-client-protobuf</artifactId>
-            <version>4.7.0-SNAPSHOT</version>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka_2.12</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients -->
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>2.1.0</version>
         </dependency>
     </dependencies>
 
