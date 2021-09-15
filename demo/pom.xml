@@ -7,6 +7,11 @@
     <artifactId>demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <modules>
+        <module>my-agent</module>
+        <module>agent</module>
+        <module>learn-demo</module>
+        <module>learn-bytecode</module>
+        <module>leet-code</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -17,7 +22,6 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.9.RELEASE</version>
-        <relativePath/>
     </parent>
 
     <properties>
@@ -212,12 +216,6 @@
             <version>0.13.0</version>
         </dependency>
         <dependency>
-            <groupId>fm.lizhi.live</groupId>
-            <artifactId>lz-pp-amusement-task-api</artifactId>
-            <version>3.0.6-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
             <groupId>javax.mail</groupId>
             <artifactId>mail</artifactId>
             <version>1.5.0-b01</version>
@@ -229,11 +227,6 @@
             <version>2.3.0</version>
         </dependency>
 
-        <dependency>
-            <groupId>fm.lizhi</groupId>
-            <artifactId>lz-common-trade-query-center-api</artifactId>
-            <version>1.0.4</version>
-        </dependency>
         <dependency>
             <groupId>org.quartz-scheduler</groupId>
             <artifactId>quartz</artifactId>
@@ -249,6 +242,38 @@
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka-clients</artifactId>
             <version>2.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jeasy</groupId>
+            <artifactId>easy-rules-core</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jeasy</groupId>
+            <artifactId>easy-rules-support</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jeasy</groupId>
+            <artifactId>easy-rules-mvel</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>2.7.19</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.directory.studio</groupId>
+            <artifactId>org.apache.commons.codec</artifactId>
+            <version>1.8</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-core</artifactId>
+            <version>1.8.2</version>
         </dependency>
     </dependencies>
 
