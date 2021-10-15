@@ -27,12 +27,12 @@ public class CacheConstant {
     /**
      * cache 刷新时间
      */
-    static int REFRESH_AFTER_TIME = 1;
+    static int REFRESH_AFTER_TIME = 10;
 
     /**
      * cache 过期时间
      */
-    static int EXPIRE_AFTER_TIME = 2;
+    static int EXPIRE_AFTER_TIME = 20;
 
     /**
      * cache 大小

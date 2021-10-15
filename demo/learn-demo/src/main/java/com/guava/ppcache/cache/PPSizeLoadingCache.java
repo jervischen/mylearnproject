@@ -1,13 +1,14 @@
 package com.guava.ppcache.cache;
 
-import com.guava.ppcache.bean.LoadingCacheConf;
 import com.google.common.base.Preconditions;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.util.concurrent.ListenableFuture;
+import com.guava.ppcache.bean.LoadingCacheConf;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 
+import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 
 /**
@@ -18,7 +19,6 @@ import java.util.function.Function;
 @Slf4j
 public class PPSizeLoadingCache<K, V> extends AbstractPPLoadingCache<K, V> {
 
-
     /**
      * 创建基于数量大小的缓存
      *
@@ -28,12 +28,16 @@ public class PPSizeLoadingCache<K, V> extends AbstractPPLoadingCache<K, V> {
     protected void createLoadingCache() {
         loadingCache = CacheBuilder.newBuilder()
                 .recordStats()
-                .removalListener((notify) -> log.info("{} cache [{}] remove key[{}],value[{}]", this.cacheName, notify.getCause().name(), notify.getKey(), notify.getValue()))
+                .removalListener((notify) -> {
+                    if (!loadingCacheConf.isProduct()) {
+                        log.info("{} cache [{}] remove key[{}],value[{}]", this.cacheName, notify.getCause().name(), notify.getKey(), notify.getValue());
+                    }
+                })
                 .maximumSize(loadingCacheConf.getMaximumSize())
                 //不会remove该key，下次访问会触发刷新，新值没有回来时返回旧值
-                .refreshAfterWrite(loadingCacheConf.getRefreshAfterTime(), loadingCacheConf.getTimeUnit())
+                .refreshAfterWrite(loadingCacheConf.getRefreshAfterTime(), loadingCacheConf.isProduct() ? loadingCacheConf.getTimeUnit() : TimeUnit.SECONDS)
                 //expire是remove该key，下次访问是同步去获取返回新值,避免refreshAfterWrite返回旧值
-                .expireAfterWrite(loadingCacheConf.getExpireAfterTime(), loadingCacheConf.getTimeUnit())
+                .expireAfterWrite(loadingCacheConf.getExpireAfterTime(), loadingCacheConf.isProduct() ? loadingCacheConf.getTimeUnit() : TimeUnit.SECONDS)
                 .build(new CacheLoader<K, V>() {
                     @Override
                     public V load(K key) throws Exception {
@@ -52,7 +56,6 @@ public class PPSizeLoadingCache<K, V> extends AbstractPPLoadingCache<K, V> {
     private PPSizeLoadingCache() {
 
     }
-
 
 
     /**

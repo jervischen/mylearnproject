@@ -1,11 +1,15 @@
 package com.guava.ppcache.cache;
 
-import com.guava.ppcache.bean.LoadingCacheConf;
 import com.google.common.base.Preconditions;
+import com.guava.ppcache.bean.LoadingCacheConf;
 import lombok.extern.log4j.Log4j;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ScheduledThreadPoolExecutor;
+import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Function;
 
 /**
@@ -20,6 +24,25 @@ public class PPLoadingCacheManager<K, V> {
     private final static Object lock = new Object();
 
     private final static Map<String, PPLoadingCacheProxy> loadingCacheMap = new ConcurrentHashMap<>(64);
+
+    static {
+        ScheduledThreadPoolExecutor executor = new ScheduledThreadPoolExecutor(1, new ThreadFactory() {
+            private final AtomicInteger au = new AtomicInteger();
+
+            @Override
+            public Thread newThread(Runnable r) {
+                Thread thread = new Thread(r, "ppLoadingCacheManager-sch" + au.getAndIncrement());
+                return thread;
+            }
+        });
+        log.info("开启缓存统计");
+        /**
+         * scheduleAtFixedRate 优先保证任务执行的频率
+         * scheduleWithFixedDelay 优先保证任务执行的间隔
+         */
+        executor.scheduleWithFixedDelay(() -> PPLoadingCacheManager.allCacheStats(), 10, 10, TimeUnit.SECONDS);
+    }
+
 
     public PPLoadingCacheProxy<K, V> createLoadingCache(String cacheName, LoadingCacheConf loadingCacheConf, Function<K, V> function) {
         PPLoadingCacheProxy<K, V> proxy = PPLoadingCacheFactory.getInstance().createSizePPLoadingfCache(cacheName, loadingCacheConf, function);

@@ -47,5 +47,10 @@ public class LoadingCacheConf {
 
     private String SEPARATOR = CacheConstant.SEPARATOR;
 
+    /**
+     * 用于测试,缓存时间默认
+     */
+    private boolean product = false;
+
 
 }

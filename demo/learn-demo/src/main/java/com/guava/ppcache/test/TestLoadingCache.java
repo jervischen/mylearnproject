@@ -47,22 +47,19 @@ public class TestLoadingCache {
                         , s -> this.load((String) s));
 
 
-        new Thread(() -> getV(cahce1, "keyA")).start();
-        new Thread(() -> getV(cahce1, "keyA")).start();
-        new Thread(() -> getV(cahce1, "keyA")).start();
-        new Thread(() -> getV(cahce1, "keyA")).start();
-        new Thread(() -> getV(cahce1, "keyA")).start();
+        for (int i = 0; i < 10; i++) {
+            new Thread(() -> getV(cahce1, "keyA")).start();
+        }
+
 
         PPLoadingCacheManager.getInstance()
                 .createLoadingCache(cahce2
                         , new LoadingCacheConf()
                         , s -> this.load((String) s));
 
-        new Thread(() -> getV(cahce2, "keyB")).start();
-        new Thread(() -> getV(cahce2, "keyB")).start();
-        new Thread(() -> getV(cahce2, "keyB")).start();
-        new Thread(() -> getV(cahce2, "keyB")).start();
-        new Thread(() -> getV(cahce2, "keyB")).start();
+        for (int i = 0; i < 10; i++) {
+            new Thread(() -> getV(cahce2, "keyB")).start();
+        }
 
         latch.countDown();
         System.in.read();
@@ -74,8 +71,10 @@ public class TestLoadingCache {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        Optional<String> name = (Optional<String>) PPLoadingCacheManager.getCacheByName(cacheName).getUnchecked(key);
-        log.info("缓存[{}] value[{}]", cacheName, name);
+        for (int i = 0; i < 20; i++) {
+            Optional<String> name = (Optional<String>) PPLoadingCacheManager.getCacheByName(cacheName).getUnchecked(key);
+//            log.info("缓存[{}] value[{}]", cacheName, name);
+        }
     }
 
 
