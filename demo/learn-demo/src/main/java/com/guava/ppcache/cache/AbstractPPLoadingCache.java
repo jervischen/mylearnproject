@@ -1,12 +1,13 @@
 package com.guava.ppcache.cache;
 
-import com.guava.ppcache.bean.LoadingCacheConf;
-import com.guava.ppcache.bean.ThreadPoolConf;
-import com.guava.ppcache.executor.ExecutorFactory;
 import com.google.common.cache.CacheStats;
 import com.google.common.cache.LoadingCache;
 import com.google.common.util.concurrent.ListeningExecutorService;
 import com.google.common.util.concurrent.MoreExecutors;
+import com.guava.ppcache.bean.CacheConstant;
+import com.guava.ppcache.bean.LoadingCacheConf;
+import com.guava.ppcache.bean.ThreadPoolConf;
+import com.guava.ppcache.executor.ExecutorFactory;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.ExecutionException;
@@ -37,13 +38,13 @@ public abstract class AbstractPPLoadingCache<K, V> implements PPLoadingCache<K, 
 
 
     void build() {
-        initExecutor();
+        initExecutor(new ThreadPoolConf().setThreadName(cacheName + "-" + CacheConstant.SEPARATOR));
         createLoadingCache();
     }
 
-    void initExecutor() {
+    void initExecutor(ThreadPoolConf threadPoolConf) {
         refreshLocalCachePool = MoreExecutors
-                .listeningDecorator(ExecutorFactory.getInstance().create(new ThreadPoolConf().setCapacity(1)));
+                .listeningDecorator(ExecutorFactory.getInstance().create(threadPoolConf));
     }
 
     abstract void createLoadingCache();

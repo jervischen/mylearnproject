@@ -6,7 +6,7 @@ package com.guava.ppcache.bean;
  */
 public class CacheConstant {
 
-    static String SEPARATOR = "-";
+    public static String SEPARATOR = "-";
 
 
     /**

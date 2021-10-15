@@ -28,6 +28,7 @@ public class ThreadPoolConf {
 
     /**
      * 线程池容量
+     * 容量满了才创建maximumPoolSize
      */
     private int capacity = CacheConstant.DEFAULT_CAPACITY;
 
