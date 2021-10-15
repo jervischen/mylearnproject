@@ -62,7 +62,7 @@ public class UpdatePerson {
         CtMethod personFly = cc.getDeclaredMethod("personFly");
         personFly.setBody("System.out.println(\"修改方法\");");
 
-        new HotSwapper(8000).reload("PersonService", cc.toBytecode());
+//        new HotSwapper(8000).reload("PersonService", cc.toBytecode());
 
         p.personFly();
 

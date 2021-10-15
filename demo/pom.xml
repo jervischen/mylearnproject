@@ -12,6 +12,8 @@
         <module>learn-demo</module>
         <module>learn-bytecode</module>
         <module>leet-code</module>
+        <module>learn-jvm</module>
+        <module>learn-async-profiler</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -57,7 +59,7 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>18.0</version>
+            <version>31.0.1-jre</version>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>

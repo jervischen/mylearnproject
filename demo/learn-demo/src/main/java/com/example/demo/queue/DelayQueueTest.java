@@ -1,8 +1,8 @@
 package com.example.demo.queue;
 
-import java.util.concurrent.DelayQueue;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import org.junit.Test;
+
+import java.util.concurrent.*;
 
 /**
  * @author Chen Xiao
@@ -27,5 +27,16 @@ public class DelayQueueTest {
         exec.shutdown();
 
         System.out.println(1111);
+    }
+
+
+    @Test
+    public void testBlockingQueue(){
+        BlockingQueue<String> workQueue = new LinkedBlockingDeque<>(100);
+        workQueue.add("a");
+        workQueue.add("b");
+        workQueue.add("c");
+
+        System.out.println(workQueue.poll());
     }
 }
